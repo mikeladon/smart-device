@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-big-triangle-dots" viewBox="0 0 560 486">
+<path opacity="0.2" d="M554.842 5.58362L280.167 481.334L5.49227 5.58367L554.842 5.58362Z" stroke="white"/>
+<circle cx="5" cy="5" r="5" fill="white"/>
+<circle cx="280" cy="481" r="5" fill="white"/>
+<circle cx="555" cy="5" r="5" fill="white"/>
+</symbol><symbol id="icon-big-triangle" viewBox="0 0 552 478">
+<path opacity="0.2" d="M550.842 0.583622L276.167 476.334L1.49227 0.58367L550.842 0.583622Z" stroke="white"/>
+</symbol><symbol id="icon-small-triangle-dots" viewBox="0 0 328 288">
+<path opacity="0.2" d="M326.148 4.74997L165.5 283L4.8523 4.75L326.148 4.74997Z" stroke="white"/>
+<circle cx="5" cy="5" r="5" fill="white"/>
+<circle cx="166" cy="283" r="5" fill="white"/>
+</symbol><symbol id="icon-small-triangle" viewBox="0 0 325 280">
+<path opacity="0.2" d="M323.148 0.749972L162.5 279L1.8523 0.75L323.148 0.749972Z" stroke="white"/>
+</symbol></svg>

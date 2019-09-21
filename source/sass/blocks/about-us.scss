@@ -1,0 +1,240 @@
+.about-us {
+	margin: 0 auto;
+	margin-bottom: 120px;
+	padding-top: 20px;
+}
+
+.about-us__wrapper {
+	position: relative; 
+	width: 74%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.about-us__advantages {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-left: 130px;
+	padding-right: 125px;
+}
+
+.advantages__block {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	margin-left: 3.5%;
+	margin-bottom: 2.5%;
+
+	border-top: 1px solid #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+	border-left: 1px solid #00B2FF;
+}
+
+.advantages__block-icon--timing {
+	position: absolute;
+	width: 29px;
+	height: 35px;
+	top: 40px;
+	left: 45px;
+}
+
+.small-triangle-about-us-first {
+	top: -77px;
+	left: -5%;
+
+	transform: rotate(90deg);
+	fill: transparent;
+}
+
+.triangle-about-us path {
+	stroke: #EBEBEB;
+}
+
+.triangle-about-us circle {
+	fill: #EBEBEB;
+}
+.big-triangle-dots-about-us {
+	top: 521px;
+	left: -33%;
+
+	transform: rotate(90deg);
+	fill: transparent;
+}
+
+.small-triangle-about-us {
+	top: -79px;
+  left: -5%;
+
+	transform: rotate(90deg);
+	fill: transparent;
+}
+
+.small-triangle-dots-about-us {
+	top: 440px;
+  left: 39.5%;
+
+	transform: rotate(270deg);
+	fill: transparent;
+}
+
+.medium-triangle-about-us {
+	top: 280px;
+  right: -15.5%;
+
+	fill: transparent;
+}
+
+.advantages__block-icon--delivery {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 40px;
+	left: 45px;
+}
+
+.advantages__block-icon--confidenciality {
+	position: absolute;
+	width: 36px;
+	height: 31px;
+	top: 40px;
+	left: 45px;
+}
+
+.advantages__block-icon--cost {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 40px;
+	left: 45px;
+}
+
+.advantages__block:nth-child(2n) {
+	margin-left: -6px;
+}
+
+.block__heading {
+	width: 66%;
+	padding-top: 94px;
+	padding-left: 44px;
+	margin-bottom: 15px;
+
+	font-family: 'Roboto Condensed';
+	font-size: 24px;
+	line-height: 34px;
+
+	color: #00B2FF;
+}
+
+.block__text {
+	width: 100%;
+
+	font-size: 16px;
+	line-height: 22px;
+
+	color: #666666;
+}
+
+.block--timing .block__text {
+	padding-right: 12%;
+	padding-left: 8%;
+	padding-bottom: 12%;
+}
+
+.block--delivery .block__text {
+	padding-right: 10%;
+	padding-left: 8%;
+	padding-bottom: 8%;
+}
+
+.block--confidenciality .block__text {
+	padding-right: 10%;
+	padding-left: 8%;
+	padding-bottom: 10%;
+}
+
+.block--cost .block__text {
+	padding-right: 10%;
+	padding-left: 8%;
+	padding-bottom: 15%;
+}
+
+#stopwatch path{
+	fill: #00B2FF;
+}
+
+.advantages__block:hover {
+	background: #00B2FF;
+}
+
+.advantages__block:hover .block__heading,
+.advantages__block:hover .block__text {
+	color: #fff;
+}
+
+.about-us__company {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 80px;
+	padding-left: 310px;
+	padding-right: 130px;
+}
+
+.about-us__company::before {
+	content: '';
+	position: absolute;
+
+	top: 1%;
+	left: 7%;
+	width: 149px;
+	height: 322px;
+
+	background: url('../img/icons/icon-company__year.svg');
+	background-repeat: no-repeat;
+}
+
+.company__heading {
+	width: 100%;
+	margin-bottom: 20px;
+
+	font-family: 'Roboto Condensed';
+	font-size: 36px;
+	line-height: 51px;
+
+	color: #666666;
+}
+
+.company__text {
+	max-width: 100%;
+
+	font-size: 16px;
+	line-height: 22px;
+
+	color: #666666;
+}
+
+.company__text--first {
+	margin-bottom: 20px;
+}
+
+.company__text--second {
+	margin-bottom: 50px;
+}
+
+.company__link {
+	padding: 13px 43px 13px 36px;
+	font-family: 'Roboto Condensed';
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	color: #00B2FF;
+
+	border: 1px solid #00B2FF;
+	border-radius: 5px;
+}
+

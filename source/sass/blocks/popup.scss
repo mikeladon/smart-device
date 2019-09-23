@@ -1,0 +1,219 @@
+.popup {
+	position: absolute;
+	width: 490px;
+	top: 137px;
+	left: 50%;
+	margin-left: -245px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	background: #00B2FF;
+
+	z-index: 5;
+}
+
+.popup__wrapper {
+	width: 410px;
+	margin: 0 auto;
+	margin-top: 28px;
+}
+
+.popup-close {
+	position: absolute;
+  top: 17px;
+  right: 18px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.popup-close::before {
+	content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 21px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.popup-close::after {
+	content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 21px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+}
+
+.popup__description {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-bottom: 32px;
+	
+	z-index: 1;
+}
+
+.popup__description--heading {
+	padding-bottom: 13px;
+
+	font-family: 'Roboto Condensed';
+	font-size: 28px;
+	line-height: 39px;
+
+	color: #fff;
+}
+
+.popup__description--text {
+	font-size: 16px;
+	line-height: 22px;
+
+	color: #fff;
+}
+
+.popup__details {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	width: 582px;
+
+	z-index: 1;
+}
+
+.details__name {
+	width: 410px;
+	margin-bottom: 30px;
+}
+
+.details__phone {
+	width: 410px;
+}
+
+.details__phone--input,
+.details__name--input {
+	width: 410px;
+	padding-left: 21px;
+	padding-top: 18px;
+	padding-bottom: 21px;
+
+	border: none;
+  background: rgba(255, 255, 255,0.1);
+}
+
+.details__phone--input::placeholder,
+.details__name--input::placeholder {
+	font-size: 16px;
+	line-height: 22px;
+	color: #fff;
+}
+
+.details__question {
+	margin-top: 33px;
+	margin-bottom: 26px;
+}
+
+.details__question--area {
+	width: 410px;
+	padding-top: 7px;
+	padding-left: 24px;
+
+	background: rgba(255, 255, 255,0.1);
+	border: none;
+}
+
+.details__question--area::placeholder {
+	font-size: 16px;
+	line-height: 22px;
+	color: #fff;
+}
+
+.popup__details-send {
+	width: 410px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.send__data {
+	margin-bottom: 32px;
+}
+
+.send__data--button {
+	padding: 13px 162px 14px 162px;
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #fff;
+	background: #00B2FF;
+	border: 1px solid #fff;
+	border-radius: 5px;
+
+	text-transform: uppercase;
+}
+
+.confirm-text {
+
+	font-size: 14px;
+	line-height: 16px;
+
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.confirm__checkbox {
+	margin-left: 45px;
+  padding-bottom: 28px;
+  width: 330px;
+}
+
+.confirm-checkbox {
+	position: relative;
+}
+
+.confirm-checkbox input[type="checkbox"] + .confirm-indicator {
+	position: absolute;
+  top: 2px;
+  left: -45px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(255,255,255);
+}
+
+.confirm-checkbox input[type="checkbox"]:checked + .confirm-indicator::before {
+	content: "";
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 4px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+}
+
+.confirm-checkbox input[type="checkbox"]:checked + .confirm-indicator::after {
+	content: "";
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 8px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(-45deg);
+}
+
+.hidden {
+	display: none;
+}
+
+.open {
+	display: block;
+}

@@ -1,15 +1,51 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+var buttonHeader = document.querySelector('.item--form__button');
+var popup = document.querySelector(".popup");
+var close = document.querySelector(".popup-close");
+var name = popup.querySelector(".details__name--input");
+var email = popup.querySelector("[name=user-email-feedback]");
+var message = popup.querySelector("[name=user-user-question]");
+var storage = "";
 
-pageHeader.classList.remove('page-header--nojs');
+var onOverlayClick = function(evt){
+  if(!popup.contains(evt.target)) { 
+    popup.classList.add('hidden');
+    popup.classList.remove('open');
+	}
+}
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
+buttonHeader.addEventListener('click', function (evt) {
+	evt.preventDefault();
+  if (popup.classList.contains('hidden')) {
+    popup.classList.remove('hidden');
+    popup.classList.add('open');
+    document.addEventListener('mousedown', onOverlayClick);
+    document.querySelector('.details__name--input').focus();
   } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+    popup.classList.add('hidden');
+    popup.classList.remove('open');
+    document.removeEventListener('mousedown', onOverlayClick);
+  }
+});
+
+close.addEventListener("click", function(evt){
+  evt.preventDefault();
+  popup.classList.add("hidden");
+  popup.classList.remove("open");
+});
+
+popup.addEventListener("submit", function(evt) {
+  localStorage.setItem("name", name.value);
+  localStorage.setItem("email", email.value);
+  localStorage.setItem("message", message.value);
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("open")) {
+      popup.classList.remove("open");
+     	popup.classList.add("hidden");
+    }
   }
 });

@@ -1,15 +1,19 @@
 .intro {
-	margin-top: -563px;
-	margin-bottom: 385px;
+	margin-top: -1px;
+	padding-top: 225px;
+	padding-bottom: 290px;
 	position: relative;
+	overflow: hidden;
+	background: #1B2D37;
+	background-image: url('../img/header-mask.png');
 }
 
 .intro::after {
 	content: '';
 
 	position: absolute;
-	top: -57px;
-	right: 9%;
+	top: 168px;
+	right: 175px;
 	width: 705px;
 	height: 515px;
 
@@ -21,21 +25,21 @@
 .intro__wrapper {
 	position: relative;
 
-	width: 74%;
+	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
 }
 
 .big-triangle-dots-intro {
 	top: -42px;
-	right: 0.5%;
+	right: 16px;
 
 	fill: transparent;
 }
 
 .small-triangle-dots-intro {
 	top: 156px;
-	right: 20.5%;
+	right: 300px;
 	
 	fill: transparent;
 }
@@ -44,7 +48,6 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	width: 820px;
 	margin-bottom: 59px;
 }
 
@@ -65,7 +68,7 @@
 
 .intro-info__text {
 	position: relative;
-	margin-left: 95px;
+	margin-left: 111px;
 	width: 680px;
 
 	font-size: 21px;
@@ -91,7 +94,7 @@
 
 .intro-info__link {
 	padding: 17px 33px 17px;
-	margin-left: 95px;
+	margin-left: 106px;
 
 	font-family: 'Roboto Condensed';
 	font-style: normal;
@@ -108,4 +111,297 @@
 
 	position: relative;
   z-index: 2;
+}
+
+.intro__scroll {
+	position: absolute;
+
+  top: 421px;
+  left: -26px;
+
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #FFFFFF;
+	opacity: 0.5;
+	transform: rotate(-90deg);
+}
+
+.small-triangle-intro-tablet {
+	display: none;
+}
+
+.big-triangle-intro-tablet {
+	display: none;
+}
+
+.button-mobile {
+	display: none;
+}
+
+@media (max-width: 1023px) {
+	.intro {
+		padding-top: 112px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 180px;
+
+		position: relative;
+		background: #1B2D37;
+		background-image: url('../img/header-mask.png');
+	}
+
+	.intro::after {
+		content: '';
+
+		position: absolute;
+		top: 35px;
+		right: -223px;
+		width: 465px;
+		height: 340px;
+
+		background: url('../img/microchips-tablet.svg');
+		background-repeat: no-repeat;
+		z-index: 1;
+	}
+
+	.intro__wrapper {
+		position: relative;
+
+		width: 100%;
+		max-width: 1023px;
+		margin: 0 auto;
+	}
+
+	.big-triangle-dots-intro {
+		display: none;
+	}
+
+	.small-triangle-dots-intro {
+		display: none;
+	}
+
+	.small-triangle-intro-tablet {
+		display: block;
+		width: 256px;
+		height: 221px;
+		top: 49px;
+		right: 39px;
+	}
+
+	.big-triangle-intro-tablet {
+		display: block;
+		width: 274px;
+		height: 385px;
+		top: -108px;
+		right: -20px;
+	}
+
+	.intro-info {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-bottom: 67px;
+		margin-left: 85px;
+	}
+
+	.intro-info__heading {
+		width: 470px;
+
+		font-family: 'Roboto Condensed';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 54px;
+		line-height: 70px;
+	}
+
+	.intro-info__text {
+		position: relative;
+		margin-left: 54px;
+		width: 425px;
+
+		font-size: 19px;
+		line-height: 30px;
+		letter-spacing: 0.02em;
+
+		color: #fff;
+
+		z-index: 2;
+	}
+
+	.intro-info__text::before {
+		content: '';
+
+		position: absolute;
+		height: 2px;
+		width: 35px;
+		top: 16px;
+		left: -50px;
+
+		background: #fff;
+	}
+
+	.intro-info__link {
+		padding: 19px 31px;
+		margin-left: 139px;
+
+		font-family: 'Roboto Condensed';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 19px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+
+		color: #fff;
+		background: #00B2FF;
+		border-radius: 5px;
+
+		position: relative;
+	  z-index: 2;
+	}
+
+	.intro__scroll {
+		display: none;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+		.intro {
+		padding-top: 230px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 71px;
+
+		position: relative;
+		background: #1B2D37;
+		background-image: url('../img/header-mask.png');
+	}
+
+	.intro::after {
+		content: '';
+
+		position: absolute;
+		top: 37px;
+		right: -172px;
+		width: 465px;
+		height: 340px;
+
+		background: url('../img/microchips-mobile.svg');
+		background-repeat: no-repeat;
+		z-index: 1;
+	}
+
+	.intro__wrapper {
+		position: relative;
+
+		width: 100%;
+		max-width: 767px;
+		margin: 0 auto;
+	}
+
+	.big-triangle-dots-intro {
+		display: none;
+	}
+
+	.small-triangle-dots-intro {
+		display: none;
+	}
+
+	.small-triangle-intro-tablet {
+		display: block;
+		width: 256px;
+		height: 221px;
+		top: -68px;
+		right: -99px;
+	}
+
+	.big-triangle-intro-tablet {
+		display: block;
+		width: 274px;
+		height: 385px;
+		top: -216px;
+		right: -159px;
+	}
+
+	.intro-info {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-bottom: 41px;
+		margin-left: 13px;
+	}
+
+	.intro-info__heading {
+		width: 235px;
+
+		font-family: 'Roboto Condensed';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 38px;
+		line-height: 47px;
+	}
+
+	.intro-info__text {
+		position: relative;
+		margin-left: 54px;
+		width: 235px;
+
+		font-size: 15px;
+		line-height: 25px;
+		font-style: normal;
+		font-weight: normal;
+
+		color: #fff;
+
+		z-index: 2;
+	}
+
+	.button-mobile {
+		display: block;
+		width: 287px;
+	}
+
+	.intro-info__text::before {
+		content: '';
+
+		position: absolute;
+		height: 2px;
+		width: 35px;
+		top: 16px;
+		left: -50px;
+
+		background: #fff;
+	}
+
+	.intro-info__link {
+		padding: 17px 16px;
+		margin-left: 18px;
+		width: 287px;
+
+		font-family: 'Roboto Condensed';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 19px;
+		text-align: center;
+		letter-spacing: 0.0em;
+		text-transform: uppercase;
+
+		color: #fff;
+		background: #00B2FF;
+		border-radius: 5px;
+
+		position: relative;
+	  z-index: 2;
+	}
+
+	.intro__scroll {
+		display: none;
+	}
+
+	.button-desktop {
+		display: none;
+	}
 }

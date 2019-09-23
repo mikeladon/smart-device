@@ -15,7 +15,8 @@
 			<div class="page-header__container">
 				<div class="page-header__logo">
 					<a class="link page-header__logo--image" href="#">
-						<img src="img/icons/logo.svg" alt="Логотип компании">
+						<img class="image-desktop" src="img/icons/logo.svg" alt="Логотип компании">
+						<img class="image-mobile" src="img/icons/logo-mobile.svg" alt="Логотип компании">
 					</a>
 					<div class="page-header__logo--text">
 						<p class="paragraph logo--text__eng">Smart device</p>
@@ -24,6 +25,20 @@
 				</div>
 				<nav class="page-header__nav">
 					<ul class="main-nav nav-list list-reset">
+						<li class="nav-list__item item__email--tablet">
+							<a class="link email--tablet__link" href="#">
+								<svg class="big-email" width="26" height="19">
+                	<use xlink:href="#big-email"></use>
+              	</svg>
+              </a>	
+						</li>
+						<li class="nav-list__item item__phone--tablet">
+							<a class="link phone--tablet__link" href="#">
+								<svg class="big-phone" width="25" height="24">
+                	<use xlink:href="#big-phone"></use>
+              	</svg>
+              </a>	
+						</li>
 						<li class="nav-list__item nav-list__item--email">
 							<a class="link item--email__link" href="#">
 								<svg class="item--email__icon" width="14" height="10"></svg>
@@ -50,7 +65,8 @@
 						<h2 class="title intro-info__heading">Печатные платы</h2>
 						<p class="paragraph intro-info__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
 					</div>
-					<a class="link button intro-info__link" href="#">Получить бесплатную консультацию</a>
+					<a class="link button intro-info__link button-desktop" href="#">Получить бесплатную консультацию</a>
+					<a class="link button intro-info__link button-mobile" href="#">Бесплатная консультация</a>
 					<svg class="triangle big-triangle-dots-intro" width="560" height="486" viewBox="0 0 560 486" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path opacity="0.2" d="M554.842 5.58362L280.167 481.334L5.49227 5.58367L554.842 5.58362Z" stroke="white"/>
 						<circle cx="5" cy="5" r="5" fill="white"/>
@@ -62,6 +78,17 @@
 						<circle cx="5" cy="5" r="5" fill="white"/>
 						<circle cx="166" cy="283" r="5" fill="white"/>
 					</svg>
+					<svg class="triangle small-triangle-intro-tablet"  width="259" height="228" viewBox="0 0 259 228" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.2" d="M257.787 4.70529L131.28 223.821L4.7736 4.70532L257.787 4.70529Z" stroke="white"/>
+						<circle cx="4.70725" cy="4.79673" r="3.94309" fill="white"/>
+						<circle cx="131.675" cy="224.032" r="3.94309" fill="white"/>
+					</svg>
+					<svg class="triangle big-triangle-intro-tablet" width="274" height="385" viewBox="0 0 274 385" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.2" d="M438.359 5.42771L221.928 380.296L5.49795 5.42774L438.359 5.42771Z" stroke="white"/>
+						<circle cx="4.92698" cy="4.86179" r="3.94309" fill="white"/>
+						<circle cx="221.797" cy="380.244" r="3.94309" fill="white"/>
+						</svg>
+					<span class="intro__scroll">Скролл вниз</span>
 				</div>
 			</section>
 			<section class="about-us">
@@ -72,15 +99,15 @@
 						<circle cx="280" cy="481" r="5" fill="white"/>
 						<circle cx="555" cy="5" r="5" fill="white"/>
 					</svg>
-					<svg class="triangle triangle-about-us small-triangle-about-us" width="325" height="280" viewBox="0 0 325 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path opacity="0.2" d="M323.148 0.749972L162.5 279L1.8523 0.75L323.148 0.749972Z" stroke="white"/>
-					</svg>  
+					<svg class="triangle triangle-about-us medium-triangle-about-us-first" width="336" height="324" viewBox="0 0 336 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M112.564 322.777L112.564 66.3811L334.609 194.579L112.564 322.777Z" stroke="#EBEBEB"/>
+					</svg>
 					<svg class="triangle triangle-about-us small-triangle-dots-about-us" width="328" height="288" viewBox="0 0 328 288" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path opacity="0.2" d="M326.148 4.74997L165.5 283L4.8523 4.75L326.148 4.74997Z" stroke="white"/>
 						<circle cx="5" cy="5" r="5" fill="white"/>
 						<circle cx="166" cy="283" r="5" fill="white"/>
 					</svg>
-					<svg class="triangle triangle-about-us medium-triangle-about-us" width="336" height="324" viewBox="0 0 336 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<svg class="triangle triangle-about-us medium-triangle-about-us-second" width="336" height="324" viewBox="0 0 336 324" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M112.564 322.777L112.564 66.3811L334.609 194.579L112.564 322.777Z" stroke="#EBEBEB"/>
 					</svg>
 					<h2 class="visually-hidden">О нас</h2>
@@ -118,7 +145,8 @@
 					<article class="about-us__company">
 						<h2 class="title company__heading">О компании</h2>
 						<p class="paragraph company__text company__text--first">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-						<p class="paragraph company__text company__text--second">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+						<p class="paragraph company__text company__text--second text-big-screens">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+						<p class="paragraph company__text company__text--second text-small-screens">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..</p>
 						<a class="link button company__link" href="#">Подробнее</a>
 						<span class="company__year"></span>
 					</article>
@@ -131,6 +159,8 @@
 						<li class="services__card card__first">
 							<a class="link card__link" href="#">
 								<img src="../img/first-card.jpg" class="card__image" alt="Производство  печатных плат">
+								<img src="../img/first-card-tablet.jpg" class="card__image-tablet" alt="Производство  печатных плат">
+								<img src="../img/first-card-mobile.jpg" class="card__image-mobile" alt="Производство  печатных плат">
 								<h2 class="title services__card--heading">Производство  печатных плат</h2>
 								<span class="link services__card--link">></span>
 							</a>
@@ -138,6 +168,8 @@
 						<li class="services__card card__second">
 							<a class="link card__link" href="#">
 								<img src="../img/second-card.jpg" class="card__image" alt="Монтаж печатных плат">
+								<img src="../img/second-card-tablet.jpg" class="card__image-tablet" alt="Производство  печатных плат">
+								<img src="../img/second-card-mobile.jpg" class="card__image-mobile" alt="Производство  печатных плат">
 								<h2 class="title services__card--heading">Монтаж печатных плат</h2>
 								<span class="link services__card--link">></span>
 							</a>
@@ -145,7 +177,9 @@
 						<li class="services__card card__third">
 							<a class="link card__link" href="#">
 								<img src="../img/third-card.jpg" class="card__image" alt="Комплектующие для светотехники">
-								<h2 class="title services__card--heading">Комплектующие для светотехники</h2>
+								<img src="../img/third-card-tablet.jpg" class="card__image-tablet" alt="Производство  печатных плат">
+								<img src="../img/third-card-mobile.jpg" class="card__image-mobile" alt="Производство  печатных плат">
+								<h2 class="title services__card--heading heading__details">Комплектующие для светотехники</h2>
 								<span class="link services__card--link">></span>
 							</a>
 						</li>
@@ -173,9 +207,6 @@
 					</svg>
 					<h2 class="visually-hidden">Свяжитесь с нами</h2>
 					<form class="contact-us__form form">
-<!-- 							<button class="form-close" aria-label="Закрыть форму">
-		          <span class="visually-hidden">Закрыть форму</span>
-		        </button> -->
 						<div class="form__description">
 							<h2 class="title form__description--heading">Остались вопросы? Задайте их нам!</h2>
 							<p class="paragraph form__description--text">Мы проконсультируем Вас бесплатно</p>
@@ -213,7 +244,7 @@
 		<footer class="page-footer">
 			<h1 class="visually-hidden">Дополнительная информация</h1>
 			<div class="page-footer__wrapper">
-				<div class="page-footer__main">
+				<div class="page-footer__ main">
 					<h2 class="visually-hidden">Полезные ссылки</h2>
 					<div class="page-footer__company">
 						<div class="page-footer__info">
@@ -223,11 +254,12 @@
 									<img src="img/icons/logo.svg" alt="Логотип компании">
 								</a>
 								<div class="page-footer__logo--text">
-									<p class="paragraph logo--text__eng">Service device</p>
-									<p class="paragraph logo--text__rus">Умные технологии</p>
+									<p class="paragraph logo--text__eng">Service Device</p>
+									<p class="paragraph logo--text__rus">умные технологии</p>
 								</div>
 							</div>
 						</div>
+						<p class="item__legal-tablet">1999-2018 SD Service Devices</p>
 						<ul class="page-footer__social--icons social list-reset">
 	          	<li class="social__item">
 	            	<a class="link social__link" href="#">
@@ -252,50 +284,62 @@
 	          	</li>
 	        	</ul>
 					</div> 
-					<!-- Sections of the website block -->
-					<div class="page-footer__sections">
-						<h3 class="title page-footer__sections--heading">Разделы сайта</h3>
-						<ul class="sections__list list-reset">
-							<li class="sections__list--item item__about-company">
-								<a class="link sections__list--item-link" href="#">O компании</a>
-							</li>
-							<li class="sections__list--item">
-								<a class="link sections__list--item-link" href="#">Комплектующие</a>
-							</li>
-							<li class="sections__list--item item__products">
-								<a class="link sections__list--item-link" href="#">Продукты</a>
-							</li>
-							<li class="sections__list--item item__delivery">
-								<a class="link sections__list--item-link" href="#">Доставка</a>
-							</li>
-							<li class="sections__list--item">
-								<a class="link sections__list--item-link" href="#">Производство печатных плат</a>
-							</li>
-							<li class="sections__list--item item__contacts">
-								<a class="link sections__list--item-link" href="#">Контакты</a>
-							</li>
-							<li class="sections__list--item">
-								<a class="link sections__list--item-link" href="#">Монтаж печатных плат</a>
-							</li>
-						</ul>
-					</div>
-					<!-- Contacts block -->
-					<div class="page-footer__contacts">
-						<h3 class="title page-footer__contacts--heading">Наш офис</h3>
-						<ul class="contacts__list list-reset">
-							<li class="contacts__list--item">
-								<a class="link contacts__list--link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
-							</li>
-							<li class="contacts__list--item">
-								<a class="link contacts__list--link" href="#">+7 (495) 589-40-50</a>
-							</li>
-							<li class="contacts__list--item">
-								<a class="link contacts__list--link" href="#">+7 (925) 003-87-67</a>
-							</li>
-							<li class="contacts__list--item">
-								<a class="link contacts__list--link" href="#">+7 (926) 926-080-79</a>
-							</li>
-						</ul>
+					<div class="page-footer__extra">
+				<!-- Sections of the website block -->
+						<div class="page-footer__sections">
+							<h3 class="title page-footer__sections--heading">Разделы сайта</h3>
+							<button class="open-sections">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 7.5V0H7.5V7.5H0V8.5H7.5V16H8.5V8.5H16V7.5H8.5Z" fill="#C4C4C4"/>
+								</svg>
+							</button>
+							<ul class="sections__list list-reset hidden">
+								<li class="sections__list--item item__about-company">
+									<a class="link sections__list--item-link" href="#">O компании</a>
+								</li>
+								<li class="sections__list--item item__details">
+									<a class="link sections__list--item-link" href="#">Комплектующие</a>
+								</li>
+								<li class="sections__list--item item__products">
+									<a class="link sections__list--item-link" href="#">Продукты</a>
+								</li>
+								<li class="sections__list--item item__delivery">
+									<a class="link sections__list--item-link" href="#">Доставка</a>
+								</li>
+								<li class="sections__list--item item__production">
+									<a class="link sections__list--item-link link-production" href="#">Производство печатных плат</a>
+								</li>
+								<li class="sections__list--item item__contacts">
+									<a class="link sections__list--item-link" href="#">Контакты</a>
+								</li>
+								<li class="sections__list--item item__repairs">
+									<a class="link sections__list--item-link" href="#">Монтаж печатных плат</a>
+								</li>
+							</ul>
+						</div>
+						<!-- Contacts block -->
+						<div class="page-footer__contacts">
+							<button class="open-contacts">
+								<svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 0.5H16V1.5H0V0.5Z" fill="#C4C4C4"/>
+								</svg>
+							</button>
+							<h3 class="title page-footer__contacts--heading">Наш офис</h3>
+							<ul class="contacts__list list-reset">
+								<li class="contacts__list--item">
+									<a class="link contacts__list--link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+								</li>
+								<li class="contacts__list--item">
+									<a class="link contacts__list--link" href="#">+7 (495) 589-40-50</a>
+								</li>
+								<li class="contacts__list--item">
+									<a class="link contacts__list--link" href="#">+7 (925) 003-87-67</a>
+								</li>
+								<li class="contacts__list--item">
+									<a class="link contacts__list--link" href="#">+7 (926) 926-080-79</a>
+								</li>
+							</ul>
+						</div>						
 					</div>
 				</div>
 			</div>
@@ -305,12 +349,50 @@
 					<h2 class="visually-hidden">Правовая информация</h2>
 					<ul class="legal__list list-reset">
 						<li class="legal__list--item item__legal-first">Все права защищены</li>
-						<li class="legal__list--item item__legal-second">1999-2018 SD Service Devices</li>
+						<li class="legal__list--item item__legal-second item__legal-desktop">1999-2018 SD Service Devices</li>
 						<li class="legal__list--item item__legal-third">Условия конфиденциальности</li>
 						<li class="legal__list--item item__legal-fourth">Developed by wow studio</li>
 					</ul>
 				</div>
 			</div>
 		</footer>
+		<form class="popup hidden">
+			<button class="popup-close" aria-label="Закрыть форму">
+    		<span class="visually-hidden">Закрыть форму</span>
+  		</button>
+  		<div class="popup__wrapper">
+				<div class="popup__description">
+					<h2 class="title popup__description--heading">Закажите звонок</h2>
+					<p class="paragraph popup__description--text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+				</div>
+				<div class="popup__details">
+					<p class="paragraph popup__details details__name">
+			      <label class="visually-hidden" for="details__name--input">Имя пользователя</label>
+			      <input class="details__name--input" type="text" name="user-name" id="details__name--input" placeholder="Имя" required="">
+			    </p>
+			    <p class="paragraph details__personal details__phone">
+			      <label class="visually-hidden" for="details__phone--input">Телефон</label>
+			      <input class="details__phone--input" type="tel" name="user-phone" id="details__phone--input" placeholder="Телефон"required="">
+			    </p>
+			    <p class="paragraph details__personal details__question">
+			      <label class="visually-hidden" for="details__question--area">Ваш вопрос</label>
+			      <textarea class="details__question--area" name="user-question" id="details__question--area" rows="7" placeholder="Ваш вопрос"></textarea>
+			    </p>
+			    <div class="popup__details-send">
+			    	<div class="send__data">
+			    		<button class="button send__data--button">Отправить</button>
+			    	</div>
+			    	<div class="confirm__checkbox">
+			      	<label class="confirm-checkbox">
+			          <input type="checkbox" name="license" class="visually-hidden" checked="">
+			          <span class="confirm-indicator"></span>
+			          <span class="confirm-text">Я согласен на обработку персональных данных</span>
+			        </label>
+			    	</div>
+			    </div>
+				</div>
+			</div>
+		</form>
+		<script src="js/script.js"></script>
 	</body>
 </html>

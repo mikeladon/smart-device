@@ -6,6 +6,10 @@ var name = popup.querySelector(".details__name--input");
 var email = popup.querySelector("[name=user-email-feedback]");
 var message = popup.querySelector("[name=user-user-question]");
 var storage = "";
+var buttonSections = document.querySelector('.open-sections');
+var buttonContacts = document.querySelector('.open-contacts');
+var sectionsList = document.querySelector('.sections__list');
+var contactsList = document.querySelector('.contacts__list');
 var TABLET_WIDTH = 767;
 
 var onOverlayClick = function(evt){
@@ -60,3 +64,36 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+buttonSections.addEventListener('click', function () {
+	if (sectionsList.classList.contains('hidden')) {
+		sectionsList.classList.remove('hidden');
+		sectionsList.classList.add('open');
+		buttonSections.style.backgroundImage = "url('../img/icons/close-contacts.svg')";
+		buttonSections.style.width = "16px";
+		buttonSections.style.height = "1px";
+	} else if (sectionsList.classList.contains('open')) {
+		sectionsList.classList.remove('open');
+		sectionsList.classList.add('hidden');
+		buttonSections.style.backgroundImage = "url('../img/icons/button-open.svg')";
+		buttonSections.style.width = "16px";
+		buttonSections.style.height = "16px";
+	}
+});
+
+buttonContacts.addEventListener('click', function () {
+	if (!contactsList.classList.contains('hidden')) {
+		contactsList.classList.remove('open');
+		contactsList.classList.add('hidden');
+		buttonContacts.style.backgroundImage = "url('../img/icons/button-open.svg')";
+		buttonContacts.style.width = "16px";
+		buttonContacts.style.height = "16px";
+	} else {
+		contactsList.classList.remove('hidden');
+		contactsList.classList.add('open');
+		buttonContacts.style.backgroundImage = "url('../img/icons/close-contacts.svg')";
+		buttonContacts.style.width = "16px";
+		buttonContacts.style.height = "1px";
+	}
+});
+

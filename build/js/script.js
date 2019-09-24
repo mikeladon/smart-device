@@ -6,9 +6,10 @@ var name = popup.querySelector(".details__name--input");
 var email = popup.querySelector("[name=user-email-feedback]");
 var message = popup.querySelector("[name=user-user-question]");
 var storage = "";
+var TABLET_WIDTH = 767;
 
 var onOverlayClick = function(evt){
-  if(!popup.contains(evt.target)) { 
+  if (!popup.contains(evt.target)) { 
     popup.classList.add('hidden');
     popup.classList.remove('open');
 	}
@@ -39,6 +40,16 @@ popup.addEventListener("submit", function(evt) {
   localStorage.setItem("email", email.value);
   localStorage.setItem("message", message.value);
 });
+
+var onResizeWindow = function () {
+	if (window.innerWidth < TABLET_WIDTH) {
+	document.querySelector('.sections__list').classList.add('hidden');
+	} else {
+		document.querySelector('.sections__list').classList.remove('hidden');
+	}
+}
+
+window.addEventListener('resize', onResizeWindow);
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {

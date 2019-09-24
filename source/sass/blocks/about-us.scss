@@ -25,7 +25,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	max-width: 48%;
+	max-width: 47%;
 	min-height: 300px;
 	margin-bottom: 30px;
 
@@ -157,7 +157,7 @@
 .about-us__company {
 	position: relative;
 	margin: 0 auto;
-	margin-top: 80px;
+	margin-top: 70px;
 	padding-left: 310px;
 	padding-right: 130px;
 	margin-bottom: 120px;
@@ -233,8 +233,6 @@
 	.about-us__wrapper {
 		position: relative; 
 		width: 100%;
-		max-width: 1023px;
-		margin: 0 auto;
 		margin-top: 55px;
 	}
 
@@ -250,12 +248,13 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		max-width: 48%;
+		max-width: 47%;
 		min-height: 305px;
 		margin-bottom: 30px;
 
 		border-top: 1px solid #EBEBEB;
 		border-bottom: 1px solid #EBEBEB;
+		border-right: 1px solid #EBEBEB;
 		border-left: 1px solid #00B2FF;
 	}
 	.advantages__block:nth-child(2n-1) {
@@ -407,7 +406,7 @@
 	}
 
 	.company__text--first {
-		margin-bottom: 24px;
+		margin-bottom: 45px;
 	}
 
 	.company__text--second {
@@ -451,8 +450,6 @@
 	.about-us__wrapper {
 		position: relative; 
 		width: 100%;
-		max-width: 767px;
-		margin: 0 auto;
 		margin-top: 37px;
 	}
 

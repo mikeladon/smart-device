@@ -32,3 +32,11 @@ body {
 .triangle {
   position: absolute;
 }
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.2;
+}

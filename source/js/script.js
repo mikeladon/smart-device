@@ -5,6 +5,11 @@ var close = document.querySelector(".popup-close");
 var name = popup.querySelector(".details__name--input");
 var email = popup.querySelector("[name=user-email-feedback]");
 var message = popup.querySelector("[name=user-user-question]");
+var body = document.querySelector('.body');
+var pageHeader = document.querySelector('.page-header');
+var pageMain = document.querySelector('.page-main');
+var pageFooter = document.querySelector('.page-footer');
+var pageIntro = document.querySelector('.intro');
 var storage = "";
 var buttonSections = document.querySelector('.open-sections');
 var buttonContacts = document.querySelector('.open-contacts');
@@ -16,6 +21,9 @@ var onOverlayClick = function(evt){
   if (!popup.contains(evt.target)) { 
     popup.classList.add('hidden');
     popup.classList.remove('open');
+    body.style.overflow = "auto";
+    pageHeader.style.background = "#1b2d37";
+    pageIntro.style.background = "#1b2d37";
 	}
 }
 
@@ -24,6 +32,9 @@ buttonHeader.addEventListener('click', function (evt) {
   if (popup.classList.contains('hidden')) {
     popup.classList.remove('hidden');
     popup.classList.add('open');
+    body.style.overflow = "hidden";
+    pageHeader.style.background = "rgba(0,0,0,0.9)";
+    pageIntro.style.background = "rgba(0,0,0,0.9)";
     document.addEventListener('mousedown', onOverlayClick);
     document.querySelector('.details__name--input').focus();
   } else {
@@ -37,6 +48,9 @@ close.addEventListener("click", function(evt){
   evt.preventDefault();
   popup.classList.add("hidden");
   popup.classList.remove("open");
+  body.style.overflow = "auto";
+  pageHeader.style.background = "#1b2d37";
+  pageIntro.style.background = "#1b2d37";
 });
 
 popup.addEventListener("submit", function(evt) {
@@ -61,6 +75,9 @@ window.addEventListener("keydown", function (evt) {
     if (popup.classList.contains("open")) {
       popup.classList.remove("open");
      	popup.classList.add("hidden");
+     	body.style.overflow = "auto";
+	    pageHeader.style.background = "#1b2d37";
+	    pageIntro.style.background = "#1b2d37";
     }
   }
 });

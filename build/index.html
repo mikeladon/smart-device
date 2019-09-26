@@ -69,54 +69,58 @@
 </symbol>
 </svg>
     </div>
-		<header class="page-header">
-			<div class="page-header__container">
-				<div class="page-header__logo">
-					<a class="link page-header__logo--image" href="#">
-						<img class="image-desktop" src="img/icons/logo.svg" alt="Логотип компании">
-						<img class="image-mobile" src="img/icons/logo-mobile.svg" alt="Логотип компании">
-					</a>
-					<div class="page-header__logo--text">
-						<p class="paragraph logo--text__eng">Smart device</p>
-						<p class="paragraph logo--text__rus">Умные технологии</p>
+    <div class="introduction__wrapper">
+			<header class="page-header">
+				<div class="page-header__container">
+					<div class="page-header__logo">
+						<a class="link page-header__logo--image" href="#">
+							<img class="image-desktop" src="img/icons/logo.svg" alt="Логотип компании">
+							<img class="image-mobile" src="img/icons/logo-mobile.svg" alt="Логотип компании">
+						</a>
+						<div class="page-header__logo--text">
+							<p class="paragraph logo--text__eng">Smart device</p>
+							<p class="paragraph logo--text__rus">Умные технологии</p>
+						</div>
 					</div>
+					<nav class="page-header__nav">
+						<ul class="main-nav nav-list list-reset">
+							<li class="nav-list__item item__email--tablet">
+								<a class="link email--tablet__link" type="mail" href="mailto:ask@smartdevice.ru">
+									<svg class="button big-email" width="26" height="19">
+	                	<use xlink:href="#big-email"></use>
+	              	</svg>
+	              </a>	
+							</li>
+							<li class="nav-list__item item__phone--tablet">
+								<a class="link phone--tablet__link" href="tel:+18506484200">
+									<svg class="button big-phone" width="25" height="24">
+	                	<use xlink:href="#big-phone"></use>
+	              	</svg>
+	              </a>	
+							</li>
+							<li class="nav-list__item nav-list__item--email">
+								<a class="link item--email__link" type="mail" href="mailto:info@sd.ru">
+									<svg class="button item--email__icon" width="19" height="14">
+	                	<use xlink:href="#big-email"></use>
+	              	</svg>
+									<span class="item--email__address">info@sd.ru</span>
+								</a>
+							</li>
+							<li class="nav-list__item nav-list__item--phone">
+								<a class="link item--phone__link" href="tel:+7(495)0005252">
+									<svg class="button item--phone__icon" width="18" height="18">
+	                	<use xlink:href="#phone"></use>
+	              	</svg>
+									<span class="item--phone__number">+7 (495) 000 52 52</span>
+								</a>
+							</li>
+							<li class="nav-list__item nav-list__item--button">
+								<button class="link button item--form__button" href="#">Заказать звонок</button>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<nav class="page-header__nav">
-					<ul class="main-nav nav-list list-reset">
-						<li class="nav-list__item item__email--tablet">
-							<a class="link email--tablet__link" href="#">
-								<svg class="button big-email" width="26" height="19">
-                	<use xlink:href="#big-email"></use>
-              	</svg>
-              </a>	
-						</li>
-						<li class="nav-list__item item__phone--tablet">
-							<a class="link phone--tablet__link" href="#">
-								<svg class="button big-phone" width="25" height="24">
-                	<use xlink:href="#big-phone"></use>
-              	</svg>
-              </a>	
-						</li>
-						<li class="nav-list__item nav-list__item--email">
-							<a class="link item--email__link" href="#">
-								<svg class="button item--email__icon" width="14" height="10"></svg>
-								<span class="item--email__address">info@sd.ru</span>
-							</a>
-						</li>
-						<li class="nav-list__item nav-list__item--phone">
-							<a class="link item--phone__link" href="tel:84950005252">
-								<svg class="button item--phone__icon" width="17" height="17"></svg>
-								<span class="item--phone__number">+7 (495) 000 52 52</span>
-							</a>
-						</li>
-						<li class="nav-list__item nav-list__item--button">
-							<a class="link button item--form__button" href="#">Заказать звонок</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main class="page-main">
+			</header>
 			<section class="intro">
 				<div class="intro__wrapper">
 					<div class="intro-info">
@@ -146,10 +150,12 @@
 						<circle cx="4.92698" cy="4.86179" r="3.94309" fill="white"></circle>
 						<circle cx="221.797" cy="380.244" r="3.94309" fill="white"></circle>
 						</svg>
-					<span class="intro__scroll">Скролл вниз</span>
+					<button class="button intro__scroll" href="#about-us">Скролл вниз</button>
 				</div>
 			</section>
-			<section class="about-us">
+		</div>
+		<main class="page-main">
+			<section class="about-us" id="about-us">
 				<div class="about-us__wrapper">
 					<svg class="triangle triangle-about-us big-triangle-dots-about-us" width="560" height="486" viewBox="0 0 560 486" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path opacity="0.2" d="M554.842 5.58362L280.167 481.334L5.49227 5.58367L554.842 5.58362Z" stroke="white"></path>
@@ -203,8 +209,7 @@
 					<article class="about-us__company">
 						<h2 class="title company__heading">О компании</h2>
 						<p class="paragraph company__text company__text--first">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-						<p class="paragraph company__text company__text--second text-big-screens">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-						<p class="paragraph company__text company__text--second text-small-screens">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..</p>
+						<p class="paragraph company__text company__text--second">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="company__text--tablet">..</span><span class="company__text--desktop">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
 						<a class="link button company__link" href="#">Подробнее</a>
 						<span class="company__year"></span>
 					</article>
@@ -216,27 +221,54 @@
 					<ul class="services__cards list-reset">
 						<li class="services__card card__first">
 							<a class="link card__link" href="#">
-								<img src="../img/first-card.jpg" class="card__image" alt="Производство  печатных плат">
-								<img src="../img/first-card-tablet.jpg" class="card__image-tablet" alt="Производство  печатных плат">
-								<img src="../img/first-card-mobile.jpg" class="card__image-mobile" alt="Производство  печатных плат">
+								<picture>
+									<source type="image/webp" media="(min-width:1023px)" srcset="img/first-card.webp"> 
+									
+									<source type="image/webp" media="(min-width:768px)" srcset="img/first-card-tablet.webp"> 
+									
+									<source type="image/webp" media="(min-width:320px)" srcset="img/first-card-mobile.webp"> 
+									
+									<img class="card__image" media="(min-width:1023px)" srcset="img/first-card.jpg"> 
+									<img class="card__image-tablet" media="(min-width:768px)" srcset="img/first-card-tablet.jpg"> 
+									<img class="card__image-mobile" media="(min-width:320px)" srcset="img/first-card-mobile.jpg"> 
+									
+								</picture>
 								<h2 class="title services__card--heading">Производство  печатных плат</h2>
 								<span class="link services__card--link">></span>
 							</a>
 						</li>
 						<li class="services__card card__second">
 							<a class="link card__link" href="#">
-								<img src="../img/second-card.jpg" class="card__image" alt="Монтаж печатных плат">
-								<img src="../img/second-card-tablet.jpg" class="card__image-tablet" alt="Производство  печатных плат">
-								<img src="../img/second-card-mobile.jpg" class="card__image-mobile" alt="Производство  печатных плат">
+								<picture>
+									<source type="image/webp" media="(min-width:1023px)" srcset="img/second-card.webp"> 
+									
+									<source type="image/webp" media="(min-width:768px)" srcset="img/second-card-tablet.webp"> 
+									
+									<source type="image/webp" media="(min-width:320px)" srcset="img/second-card-mobile.webp"> 
+									
+									<img class="card__image" media="(min-width:1023px)" srcset="img/second-card.jpg"> 
+									<img class="card__image-tablet" media="(min-width:768px)" srcset="img/second-card-tablet.jpg"> 
+									<img class="card__image-mobile" media="(min-width:320px)" srcset="img/second-card-mobile.jpg"> 
+									
+								</picture>
 								<h2 class="title services__card--heading">Монтаж печатных плат</h2>
 								<span class="link services__card--link">></span>
 							</a>
 						</li>
 						<li class="services__card card__third">
 							<a class="link card__link" href="#">
-								<img src="../img/third-card.jpg" class="card__image" alt="Комплектующие для светотехники">
-								<img src="../img/third-card-tablet.jpg" class="card__image-tablet" alt="Производство  печатных плат">
-								<img src="../img/third-card-mobile.jpg" class="card__image-mobile" alt="Производство  печатных плат">
+								<picture>
+									<source type="image/webp" media="(min-width:1023px)" srcset="img/third-card.webp"> 
+									
+									<source type="image/webp" media="(min-width:768px)" srcset="img/third-card-tablet.webp"> 
+									
+									<source type="image/webp" media="(min-width:320px)" srcset="img/third-card-mobile.webp"> 
+									
+									<img class="card__image" media="(min-width:1023px)" srcset="img/third-card.jpg"> 
+									<img class="card__image-tablet" media="(min-width:768px)" srcset="img/third-card-tablet.jpg"> 
+									<img class="card__image-mobile" media="(min-width:320px)" srcset="img/third-card-mobile.jpg"> 
+									
+								</picture>
 								<h2 class="title services__card--heading heading__details">Комплектующие для светотехники</h2>
 								<span class="link services__card--link">></span>
 							</a>
@@ -272,15 +304,15 @@
 						<div class="form__personal">
 							<p class="paragraph form__personal personal__name">
 		            <label class="visually-hidden" for="personal__name--input">Имя пользователя</label>
-		            <input class="personal__name--input" type="text" name="user-name" id="personal__name--input" placeholder="Имя">
+		            <input class="personal__name--input" type="text" name="user-name" id="personal__name--input" placeholder="Имя" required="">
 		          </p>
 		          <p class="paragraph form__personal personal__phone">
 		            <label class="visually-hidden" for="personal__phone--input">Телефон</label>
-		            <input class="personal__phone--input" type="tel" name="user-phone" id="personal__phone--input" placeholder="Телефон">
+		            <input class="personal__phone--input" type="tel" name="user-phone" id="personal__phone--input" placeholder="Телефон" required="">
 		          </p>
 		          <p class="paragraph form__personal personal__question">
 		            <label class="visually-hidden" for="personal__question--area">Ваш вопрос</label>
-		            <textarea class="personal__question--area" name="user-question" id="personal__question--area" rows="11" placeholder="Ваш вопрос"></textarea>
+		            <textarea class="personal__question--area" name="user-question" id="personal__question--area" rows="11" placeholder="Ваш вопрос" required=""></textarea>
 		          </p>
 		          <div class="form__personal-send">
 		          	<div class="send__info">
@@ -406,43 +438,45 @@
 				</div>
 			</div>
 		</footer>
-		<form class="popup hidden">
-			<button class="popup-close" aria-label="Закрыть форму">
-    		<span class="visually-hidden">Закрыть форму</span>
-  		</button>
-  		<div class="popup__wrapper">
-				<div class="popup__description">
-					<h2 class="title popup__description--heading">Закажите звонок</h2>
-					<p class="paragraph popup__description--text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+		<div class="popup__container hidden">
+			<form class="popup">
+				<button class="popup-close" aria-label="Закрыть форму">
+	    		<span class="visually-hidden">Закрыть форму</span>
+	  		</button>
+	  		<div class="popup__wrapper">
+					<div class="popup__description">
+						<h2 class="title popup__description--heading">Закажите звонок</h2>
+						<p class="paragraph popup__description--text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+					</div>
+					<div class="popup__details">
+						<p class="paragraph popup__details details__name">
+				      <label class="visually-hidden" for="details__name--input">Имя пользователя</label>
+				      <input class="details__name--input" type="text" name="user-name" id="details__name--input" placeholder="Имя" required="">
+				    </p>
+				    <p class="paragraph details__personal details__phone">
+				      <label class="visually-hidden" for="details__phone--input">Телефон</label>
+				      <input class="details__phone--input" type="tel" name="user-phone" id="details__phone--input" placeholder="Телефон" required="">
+				    </p>
+				    <p class="paragraph details__personal details__question">
+				      <label class="visually-hidden" for="details__question--area">Ваш вопрос</label>
+				      <textarea class="details__question--area" name="user-question" id="details__question--area" rows="7" placeholder="Ваш вопрос" required=""></textarea>
+				    </p>
+				    <div class="popup__details-send">
+				    	<div class="send__data">
+				    		<button class="button send__data--button">Отправить</button>
+				    	</div>
+				    	<div class="confirm__checkbox">
+				      	<label class="confirm-checkbox">
+				          <input type="checkbox" name="license" class="visually-hidden" checked="">
+				          <span class="confirm-indicator"></span>
+				          <span class="confirm-text">Я согласен на обработку персональных данных</span>
+				        </label>
+				    	</div>
+				    </div>
+					</div>
 				</div>
-				<div class="popup__details">
-					<p class="paragraph popup__details details__name">
-			      <label class="visually-hidden" for="details__name--input">Имя пользователя</label>
-			      <input class="details__name--input" type="text" name="user-name" id="details__name--input" placeholder="Имя" required="">
-			    </p>
-			    <p class="paragraph details__personal details__phone">
-			      <label class="visually-hidden" for="details__phone--input">Телефон</label>
-			      <input class="details__phone--input" type="tel" name="user-phone" id="details__phone--input" placeholder="Телефон" required="">
-			    </p>
-			    <p class="paragraph details__personal details__question">
-			      <label class="visually-hidden" for="details__question--area">Ваш вопрос</label>
-			      <textarea class="details__question--area" name="user-question" id="details__question--area" rows="7" placeholder="Ваш вопрос"></textarea>
-			    </p>
-			    <div class="popup__details-send">
-			    	<div class="send__data">
-			    		<button class="button send__data--button">Отправить</button>
-			    	</div>
-			    	<div class="confirm__checkbox">
-			      	<label class="confirm-checkbox">
-			          <input type="checkbox" name="license" class="visually-hidden" checked="">
-			          <span class="confirm-indicator"></span>
-			          <span class="confirm-text">Я согласен на обработку персональных данных</span>
-			        </label>
-			    	</div>
-			    </div>
-				</div>
-			</div>
-		</form>
+			</form>
+		</div>
 		<script src="js/script.js"></script>
 	</body>
 </html>

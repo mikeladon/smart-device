@@ -19,6 +19,15 @@ body {
   line-height: 22px;
 }
 
+.introduction__wrapper {
+  background: #1B2D37;
+  background-image: url("../img/header-mask.png");
+}
+
+.item--form__button:active .introduction__wrapper {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .link {
   text-decoration: none;
 }

@@ -4,12 +4,10 @@
 	padding-bottom: 290px;
 	position: relative;
 	overflow: hidden;
-	background: #1B2D37;
-	background-image: url('../img/header-mask.png');
 }
 
 .intro::after {
-	content: '';
+	content: "";
 
 	position: absolute;
 	top: 168px;
@@ -17,7 +15,7 @@
 	width: 705px;
 	height: 515px;
 
-	background: url('../img/icons/microchips.svg');
+	background: url("../img/icons/microchips.svg");
 	background-repeat: no-repeat;
 	z-index: 1;
 }
@@ -56,7 +54,7 @@
 	width: 820px;
 
 	text-transform: uppercase;
-	font-family: 'Roboto Condensed';
+	font-family: "Roboto Condensed";
 	font-weight: bold;
 	font-size: 72px;
 	line-height: 94px;
@@ -81,7 +79,7 @@
 }
 
 .intro-info__text::before {
-	content: '';
+	content: "";
 
 	position: absolute;
 	height: 2px;
@@ -96,7 +94,7 @@
 	padding: 17px 33px 17px;
 	margin-left: 106px;
 
-	font-family: 'Roboto Condensed';
+	font-family: "Roboto Condensed";
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
@@ -116,8 +114,8 @@
 .intro__scroll {
 	position: absolute;
 
-  top: 421px;
-  left: -26px;
+  top: 420px;
+  left: -29px;
 
 	font-size: 14px;
 	line-height: 16px;
@@ -125,6 +123,8 @@
 	color: #FFFFFF;
 	opacity: 0.5;
 	transform: rotate(-90deg);
+	background: transparent;
+	border: none;
 }
 
 .small-triangle-intro-tablet {
@@ -147,12 +147,10 @@
 		padding-bottom: 180px;
 
 		position: relative;
-		background: #1B2D37;
-		background-image: url('../img/header-mask.png');
 	}
 
 	.intro::after {
-		content: '';
+		content: "";
 
 		position: absolute;
 		top: 35px;
@@ -160,17 +158,9 @@
 		width: 465px;
 		height: 340px;
 
-		background: url('../img/microchips-tablet.svg');
+		background: url("../img/microchips-tablet.svg");
 		background-repeat: no-repeat;
 		z-index: 1;
-	}
-
-	.intro__wrapper {
-		position: relative;
-
-/*		width: 100%;
-		max-width: 1023px;
-		margin: 0 auto;*/
 	}
 
 	.big-triangle-dots-intro {
@@ -208,7 +198,7 @@
 	.intro-info__heading {
 		width: 470px;
 
-		font-family: 'Roboto Condensed';
+		font-family: "Roboto Condensed";
 		font-style: normal;
 		font-weight: bold;
 		font-size: 54px;
@@ -230,7 +220,7 @@
 	}
 
 	.intro-info__text::before {
-		content: '';
+		content: "";
 
 		position: absolute;
 		height: 2px;
@@ -245,7 +235,7 @@
 		padding: 19px 31px;
 		margin-left: 139px;
 
-		font-family: 'Roboto Condensed';
+		font-family: "Roboto Condensed";
 		font-style: normal;
 		font-weight: bold;
 		font-size: 13px;
@@ -275,12 +265,10 @@
 		padding-bottom: 71px;
 
 		position: relative;
-		background: #1B2D37;
-		background-image: url('../img/header-mask.png');
 	}
 
 	.intro::after {
-		content: '';
+		content: "";
 
 		position: absolute;
 		top: 37px;
@@ -288,17 +276,9 @@
 		width: 465px;
 		height: 340px;
 
-		background: url('../img/microchips-mobile.svg');
+		background: url("../img/microchips-mobile.svg");
 		background-repeat: no-repeat;
 		z-index: 1;
-	}
-
-	.intro__wrapper {
-		position: relative;
-/*
-		width: 100%;
-		max-width: 767px;
-		margin: 0 auto;*/
 	}
 
 	.big-triangle-dots-intro {
@@ -336,7 +316,7 @@
 	.intro-info__heading {
 		width: 235px;
 
-		font-family: 'Roboto Condensed';
+		font-family: "Roboto Condensed";
 		font-style: normal;
 		font-weight: bold;
 		font-size: 38px;
@@ -364,7 +344,7 @@
 	}
 
 	.intro-info__text::before {
-		content: '';
+		content: "";
 
 		position: absolute;
 		height: 2px;
@@ -380,7 +360,7 @@
 		margin-left: 18px;
 		width: 287px;
 
-		font-family: 'Roboto Condensed';
+		font-family: "Roboto Condensed";
 		font-style: normal;
 		font-weight: bold;
 		font-size: 14px;

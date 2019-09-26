@@ -30,7 +30,7 @@
 }
 
 .form::before {
-	content: '';
+	content: "";
 
 	position: absolute;
 	width: 511px;
@@ -39,7 +39,7 @@
 	top: 67px;
   left: -617px;
 
-	background: url('../img/icons/airplane.svg');
+	background: url("../img/icons/airplane.svg");
 }
 
 .form__description {
@@ -54,7 +54,7 @@
 .form__description--heading {
 	padding-bottom: 10px;
 
-	font-family: 'Roboto Condensed';
+	font-family: "Roboto Condensed";
 	font-size: 34px;
 	line-height: 51px;
 
@@ -72,7 +72,6 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-
 	width: 582px;
 
 	z-index: 1;
@@ -217,23 +216,14 @@
 
 @media (max-width: 1023px) {
 	.contact-us {
-		margin: 0 auto;
 		padding-top: 20px;
 
 		background: #00B2FF;
-
-		overflow: hidden;
 	}
 
 	.contact-us__wrapper {
-		position: relative; 
-		width: 100%;
 		padding-top: 59px;
 		padding-bottom: 102px;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-end;
 	}
 
 	.form {
@@ -251,9 +241,6 @@
 	}
 
 	.form__description {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
 		padding-bottom: 51px;
 		
 		z-index: 1;
@@ -262,7 +249,7 @@
 	.form__description--heading {
 		padding-bottom: 17px;
 
-		font-family: 'Roboto Condensed';
+		font-family: "Roboto Condensed";
 		font-size: 31px;
 		line-height: 46px;
 		font-weight: 400;
@@ -280,10 +267,6 @@
 	}
 
 	.form__personal {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-
 		width: 100%;
 
 		z-index: 1;
@@ -429,17 +412,12 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
 	.contact-us {
-		margin: 0 auto;
 		padding-top: 20px;
 
 		background: #00B2FF;
-
-		overflow: hidden;
 	}
 
 	.contact-us__wrapper {
-		position: relative; 
-		width: 100%;
 		margin: 0 auto;
 		padding-top: 9px;
 		padding-bottom: 36px;
@@ -464,9 +442,6 @@
 	}
 
 	.form__description {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
 		padding-bottom: 23px;
 		
 		z-index: 1;
@@ -476,7 +451,7 @@
 		padding-bottom: 15px;
 		width: 80%;
 
-		font-family: 'Roboto Condensed';
+		font-family: "Roboto Condensed";
 		font-size: 28px;
 		line-height: 39px;
 		font-weight: 400;
@@ -495,9 +470,6 @@
 	}
 
 	.form__personal {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
 		justify-content: space-between;
 
 		width: 100%;

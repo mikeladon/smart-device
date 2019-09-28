@@ -17,7 +17,7 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding-left: 130px;
+	padding-left: 137px;
 	padding-right: 75px;
 }
 
@@ -33,9 +33,12 @@
 	border-bottom: 1px solid #EBEBEB;
 	border-left: 1px solid #00B2FF;
 }
+
 .advantages__block:nth-child(2n-1) {
-	margin-left: 30px;
+	margin-left: 22px;
 }
+
+
 
 .advantages__block-icon--timing {
 	position: absolute;
@@ -116,7 +119,7 @@
 
 .block__heading {
 	padding-top: 94px;
-	padding-left: 46px;
+	padding-left: 42px;
 	margin-bottom: 15px;
 
 	font-family: "Roboto Condensed";
@@ -129,6 +132,7 @@
 .block__text {
 	padding-right: 85px;
   padding-left: 38px;
+  padding-bottom: 46px;
 
 	font-size: 16px;
 	line-height: 22px;
@@ -138,7 +142,6 @@
 
 .block--timing .block__text {
 	padding-right: 90px;
-  padding-left: 54px;
 }
 
 #stopwatch path{
@@ -147,6 +150,9 @@
 
 .advantages__block:hover {
 	background: #00B2FF;
+	transition: top 1s ease-out 0.5s;
+
+	cursor: pointer;
 }
 
 .advantages__block:hover .block__heading,
@@ -154,11 +160,18 @@
 	color: #fff;
 }
 
+.advantages__block:hover #stopwatch path,
+.advantages__block:hover #tag path,
+.advantages__block:hover #detective path,
+.advantages__block:hover #hired path{
+	fill: #fff;
+}
+
 .about-us__company {
 	position: relative;
 	margin: 0 auto;
-	margin-top: 70px;
-	padding-left: 310px;
+	margin-top: 75px;
+	padding-left: 313px;
 	padding-right: 130px;
 	margin-bottom: 120px;
 }
@@ -167,8 +180,8 @@
 	content: "";
 	position: absolute;
 
-	top: 10px;
-	left: 110px;
+	top: 4px;
+	left: 103px;
 	width: 149px;
 	height: 322px;
 
@@ -194,7 +207,7 @@
 }
 
 .company__text--first {
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 }
 
 .company__text--second {
@@ -206,8 +219,8 @@
 }
 
 .company__link {
-	margin-left: 10px;
-	padding: 13px 43px 13px 36px;
+	margin-left: 3px;
+	padding: 13px 50px 14px 50px;
 	font-family: "Roboto Condensed";
 	font-weight: bold;
 	font-size: 14px;
@@ -250,6 +263,7 @@
 		border-right: 1px solid #EBEBEB;
 		border-left: 1px solid #00B2FF;
 	}
+
 	.advantages__block:nth-child(2n-1) {
 		margin-left: 4%;
 	}
@@ -326,6 +340,7 @@
 	.block__text {
 		padding-right: 20px;
 	  padding-left: 26px;
+	  padding-bottom: 31px;
 
 		font-size: 16px;
 		line-height: 22px;
@@ -349,7 +364,7 @@
 		position: relative;
 		margin: 0 auto;
 		margin-top: 22px;
-		padding-left: 210px;
+		padding-left: 212px;
 		padding-right: 5px;
 		margin-bottom: 96px;
 	}
@@ -386,11 +401,11 @@
 	}
 
 	.company__text--first {
-		margin-bottom: 45px;
+		margin-bottom: 22px;
 	}
 
 	.company__text--second {
-		margin-bottom: 50px;
+		margin-bottom: 53px;
 	}
 
 	.company__text--tablet {
@@ -402,8 +417,8 @@
 	}
 
 	.company__link {
-		margin-left: 4px;
-		padding: 13px 43px 15px 37px;
+		margin-left: 1px;
+		padding: 13px 54px 15px 46px;
 		font-family: "Roboto Condensed";
 		font-weight: bold;
 		font-size: 14px;
@@ -525,7 +540,8 @@
 	}
 
 	.block__text {
-		padding-right: 20px;
+		padding-bottom: 10px;
+		padding-right: 10px;
 	  padding-left: 26px;
 
 		font-size: 16px;
@@ -606,14 +622,14 @@
 	}
 
 	.company__link {
-		margin-left: 4px;
-		padding: 13px 44px 15px 49px;
+		margin-left: 2px;
+		padding: 13px 50px 15px 49px;
 		font-family: "Roboto Condensed";
 		font-weight: bold;
-		font-size: 13px;
+		font-size: 14px;
 		line-height: 16px;
 		text-align: center;
-		letter-spacing: 0.0em;
+		letter-spacing: 0.05em;
 		text-transform: uppercase;
 
 		color: #00B2FF;

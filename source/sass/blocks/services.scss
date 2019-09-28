@@ -1,7 +1,7 @@
 .services {
 	width: auto;
 	background-color: #1B2D37;
-	padding-bottom: 129px;
+	padding-bottom: 99px;
 }
 
 .services__wrapper {
@@ -31,6 +31,7 @@
 }
 
 .services__card {
+	margin-bottom: 30px;
 	position: relative;
 	width: 28.5%;
 	max-width: 375px;
@@ -105,10 +106,10 @@
 
 	.services__card {
 		position: relative;
-		width: 96.5%;
+		width: 97%;
 		max-width: 720px;
 		height: 256px;
-		margin-right: 33px;
+		margin-right: 20px;
 		margin-bottom: 46px;
 	}
 
@@ -120,7 +121,7 @@
 		position: absolute;
 		width: 175px;
 		left: 47px;
-		top: 42px;
+		top: 39px;
 
 		font-family: "Roboto Condensed";
 		font-weight: 400;
@@ -167,10 +168,10 @@
 	}
 
 	.services__heading {
-		padding-top: 47px;
+		padding-top: 49px;
 		padding-bottom: 43px;
 		padding-left: 24px;
-		width: 92%;
+		width: 93%;
 
 		font-family: "Roboto Condensed";
 		font-style: normal;
@@ -188,7 +189,7 @@
 		height: 256px;
 		margin-right: 0px;
 		margin-left: 14px;
-		margin-bottom: 31px;
+		margin-bottom: 30px;
 	}
 
 	.services__card:nth-child(3n) {

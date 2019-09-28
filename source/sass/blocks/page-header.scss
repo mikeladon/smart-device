@@ -60,7 +60,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	padding-top: 10px;
-	margin-right: 14px;
+	margin-right: 16px;
 }
 
 .item__email--tablet {
@@ -112,7 +112,7 @@
 }
 
 .item--form__button {
-	padding: 14px 22px 11px 22px;
+	padding: 14px 30px 11px 27px;
   margin-top: -12px;
 
 	font-family: "Roboto Condensed";
@@ -126,6 +126,7 @@
 
 	color: #fff;
 	background: transparent;
+	letter-spacing: 0.05em;
 }
 
 @media (max-width: 1023px) {

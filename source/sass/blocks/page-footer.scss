@@ -86,7 +86,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 425px;
-	margin-right: 230px;
+	margin-right: 235px;
 	margin-left: 60px;
 }
 
@@ -106,6 +106,8 @@
 	display: flex;
 	align-items: center;
 	text-transform: uppercase;
+	letter-spacing: 0.05em;
+
 
 	color: #1B2D37;
 }
@@ -131,7 +133,7 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	margin-right: 28px;
+	margin-right: 13px;
 
 }
 
@@ -142,6 +144,8 @@
 	line-height: 16px;
 	font-family: "Roboto Condensed";
 	text-transform: uppercase;
+	letter-spacing: 0.05em;
+
 
 	color: #1B2D37;
 }
@@ -183,6 +187,8 @@
 	align-items: center;
 
 	text-transform: uppercase;
+	letter-spacing: 0.04em;
+
 
 	color: #1B2D37;
 
@@ -190,19 +196,19 @@
 }
 
 .item__legal-first {
-	margin-right: 7px;
+	margin-left: 13px;
 }
 
 .item__legal-second {
-	margin-right: 90px;
+	margin-right: 72px;
 }
 
 .item__legal-third {
-	margin-right: 320px;
+	margin-right: 331px;
 }
 
 .item__legal-fourth {
-	margin-right: 29px;
+	margin-right: 16px;
 }
 
 .item__legal-tablet {
@@ -331,7 +337,7 @@
 	.page-footer__sections {
 		display: flex;
 		flex-direction: column;
-		width: 225px;
+		width: 240px;
 		margin-right: 0px;
 		margin-left: 25px;
 	}
@@ -364,10 +370,12 @@
 	}
 
 	.item__delivery {
+		width: 125px;
 		order: 5;
 	}
 
 	.item__contacts {
+		width: 125px;
 		order: 6;
 	}
 
@@ -406,7 +414,7 @@
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		margin-right: 46px;
+		margin-right: 34px;
 
 	}
 
@@ -459,11 +467,11 @@
 
 	.item__legal-third {
 		margin-right: 0px;
-		margin-left: 20px;
+		margin-left: 27px;
 	}
 
 	.item__legal-fourth {
-		margin-right: 36px;
+		margin-right: 24px;
 	}
 
 	.item__legal-first {
@@ -517,7 +525,7 @@
 		flex-wrap: wrap;
 		width: auto;
 		justify-content: space-between;
-		margin-right: 7px;
+		margin-right: 2px;
 	}
 
 	.page-footer__info {
@@ -525,7 +533,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		margin: 0 auto;
-		margin-bottom: 18px;
+		margin-bottom: 20px;
 	}
 
 	.page-footer__logo {
@@ -594,7 +602,6 @@
 		flex-wrap: wrap;
 		padding-top: 77px;
 		justify-content: space-between;
-		margin: 0 auto;
 		margin-right: 11px;
 	}
 
@@ -602,7 +609,7 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		width: 225px;
+		width: auto;
 		margin-right: 0px;
 		margin-left: 13px;
 	}
@@ -624,51 +631,25 @@
 	
 	.open-sections {
 		position: absolute;
-    top: 3px;
-    right: -63px;
+    top: 1px;
+    right: 6px;
     width: 16px;
     height: 16px;
     cursor: pointer;
     border: 0;
     background: transparent;
-    background-image: url("../img/icons/button-open.svg");
+    background-image: url("../img/icons/button-open-sections.svg");
     background-repeat: no-repeat;
 	}
 
 
 	.sections__list {
+		width: 225px;
+		margin-top: 15px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
-	}
-
-	.item__about-company {
-		order: 0;
-	}
-
-	.item__products {
-		order: 1;
-	}
-
-	.item__production {
-		order: 2;
-	}
-
-	.item__repairs {
-		order: 3;
-	}
-
-	.item__details {
-		order: 4;
-	}
-
-	.item__delivery {
-		order: 5;
-	}
-
-	.item__contacts {
-		order: 6;
 	}
 
 	.page-footer__sections--heading {
@@ -698,10 +679,11 @@
 
 	.item__delivery,
 	.item__contacts {
-		min-width: 114px;
+		width: 185px;
 	}
 
 	.page-footer__contacts {
+		width: auto;
 		position: relative;
 		margin-top: 33px;
 		margin-left: 15px;
@@ -714,14 +696,14 @@
 
 	.open-contacts {
 		position: absolute;
-		top: 9px;
-    right: -15px;
+		top: 0px;
+    right: -26px;
     width: 16px;
-    height: 1px;
+    height: 16px;
     border: none;
     background: transparent;
     cursor: pointer;
-    background-image: url("../img/icons/close-contacts.svg");
+    background-image: url("../img/icons/button-open-contacts.svg");
     background-repeat: no-repeat;
 	}
 
@@ -804,7 +786,10 @@
 		display: none;
 	}
 
-	.open-contacts, 
+	.open-contacts {
+		display: block;
+	}
+
 	.open-sections {
 		display: block;
 	}
@@ -812,15 +797,6 @@
 	.open {
 		display: block;
 	}
-
-	.open-sections .opened-list-svg {
-		display: none;
-	}
-	
-	.open-contacts .closed-list-svg {
-		display: none;
-	}
-
 
 }
 

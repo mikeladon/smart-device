@@ -17,6 +17,9 @@ var sectionsList = document.querySelector(".sections__list");
 var contactsList = document.querySelector(".contacts__list");
 var TABLET_WIDTH = 767;
 var scrollButton = document.querySelector(".intro__scroll");
+var phoneInput = document.querySelector('.personal__phone--input');
+var popupPhoneInput = document.querySelector('.details__phone--input');
+var regExp = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
 
 var onOverlayClick = function(evt){
   if (!popup.contains(evt.target)) { 
@@ -47,6 +50,32 @@ close.addEventListener("click", function(evt) {
   popupContainer.classList.remove("open");
   body.style.overflow = "auto";
 });
+
+var validatePhone = function () {
+  var valid = regExp.test(phoneInput.value);
+  if (!valid) {
+    document.querySelector('.send__info--button').setAttribute("disabled", "true");
+    phoneInput.style.border = "1px solid red";
+  } else {
+    document.querySelector('.send__info--button').removeAttribute("disabled");
+    phoneInput.style.border = "1px solid transparent";
+  }
+}
+
+phoneInput.addEventListener('change', validatePhone);
+
+var validatePhonePopup = function () {
+  var valid = regExp.test(popupPhoneInput.value);
+  if (!valid) {
+    document.querySelector('.send__data--button').setAttribute("disabled", "true");
+    popupPhoneInput.style.border = "1px solid red";
+  } else {
+    document.querySelector('.send__data--button').removeAttribute("disabled");
+    popupPhoneInput.style.border = "1px solid transparent";
+  }
+}
+
+popupPhoneInput.addEventListener('change', validatePhonePopup);
 
 popup.addEventListener("submit", function(evt) {
   localStorage.setItem("name", name.value);
@@ -94,4 +123,3 @@ scrollButton.addEventListener("click", function (e) {
     block: "start"
   })
 })
-

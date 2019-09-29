@@ -39,7 +39,7 @@
 	top: 67px;
   left: -617px;
 
-	background: url("../img/icons/airplane.svg");
+	background: url("../img/airplane.png");
 }
 
 .form__description {
@@ -97,7 +97,7 @@
 	padding-top: 17px;
 	padding-bottom: 21px;
 
-	border: none;
+	border: 1px solid transparent;
   background: rgba(255, 255, 255,0.1);
 }
 
@@ -110,7 +110,7 @@
 
 .personal__question {
 	margin-top: 40px;
-	margin-bottom: 43px;
+	margin-bottom: 40px;
 }
 
 .personal__question--area {
@@ -120,7 +120,7 @@
 	padding-left: 24px;
 
 	background: rgba(255, 255, 255,0.1);
-	border: none;
+	border: 1px solid transparent;
 	resize: none;
 }
 
@@ -163,6 +163,7 @@
 	line-height: 16px;
 
 	color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
 }
 
 .form-checkbox {
@@ -176,6 +177,8 @@
   width: 16px;
   height: 16px;
   border: 1px solid rgb(255,255,255);
+
+  cursor: pointer;
 }
 
 .form-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
@@ -307,7 +310,6 @@
 		padding-top: 19px;
 		padding-bottom: 21px;
 
-		border: none;
 	  background: rgba(255, 255, 255,0.1);
 	}
 
@@ -324,7 +326,7 @@
 
 	.personal__question {
 		margin-top: 40px;
-		margin-bottom: 48px;
+		margin-bottom: 45px;
 	}
 
 	.personal__question--area {
@@ -334,7 +336,6 @@
 		padding-left: 22px;
 
 		background: rgba(255, 255, 255,0.1);
-		border: none;
 	}
 
 	.personal__question--area::placeholder {

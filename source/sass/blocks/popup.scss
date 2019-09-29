@@ -106,7 +106,7 @@
 
 .details__name {
 	width: 410px;
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 }
 
 .details__phone {
@@ -121,7 +121,7 @@
 	padding-top: 18px;
 	padding-bottom: 21px;
 
-	border: none;
+	border: 1px solid transparent;
   background: rgba(255, 255, 255,0.1);
 }
 
@@ -134,7 +134,7 @@
 
 .details__question {
 	margin-top: 33px;
-	margin-bottom: 26px;
+	margin-bottom: 24px;
 }
 
 .details__question--area {
@@ -144,7 +144,7 @@
 	padding-left: 24px;
 
 	background: rgba(255, 255, 255,0.1);
-	border: none;
+	border: 1px solid transparent;
 }
 
 .details__question--area::placeholder {
@@ -180,7 +180,6 @@
 }
 
 .confirm-text {
-
 	font-size: 14px;
 	line-height: 16px;
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Умные технологии для продвинутых пользователей">
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -28,14 +29,14 @@
                 <nav class="introduction__page-header page-header__nav">
                     <ul class="main-nav nav-list list-reset">
                         <li class="nav-list nav-list__item item item__email-tablet">
-                            <a class="link email email__tablet-link" href="mailto:info@sd.ru">
+                            <a class="link email email__tablet-link" aria-label="Написать на почту" href="mailto:info@sd.ru">
                                 <svg class="button big-email" width="26" height="19">
                                     <use xlink:href="#big-email"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="nav-list nav-list__item item item__phone-tablet">
-                            <a class="link phone phone__tablet-link" href="tel:+7(495)0005252">
+                            <a class="link phone phone__tablet-link" aria-label="Позвонить по телефону" href="tel:+7(495)0005252">
                                 <svg class="button big-phone" width="25" height="24">
                                     <use xlink:href="#big-phone"></use>
                                 </svg>
@@ -253,15 +254,15 @@
                     <div class="form__personal">
                         <p class="paragraph form__personal personal personal__name">
                             <label class="visually-hidden" for="personal__name--input">Имя пользователя</label>
-                            <input class="personal__name personal__name--input" type="text" name="user-name" id="personal__name--input" placeholder="Имя" required="">
+                            <input class="input personal__name personal__name--input" type="text" name="user-name" id="personal__name--input" placeholder="Имя" required="">
                         </p>
                         <p class="paragraph form__personal personal personal__phone">
                             <label class="visually-hidden" for="personal__phone--input">Телефон</label>
-                            <input class="personal__phone personal__phone--input" type="tel" name="user-phone" id="personal__phone--input" placeholder="Телефон" required="">
+                            <input class="input personal__phone personal__phone--input" type="tel" name="user-phone" id="personal__phone--input" placeholder="Телефон" required="">
                         </p>
                         <p class="paragraph form__personal personal personal__question">
                             <label class="visually-hidden" for="personal__question--area">Ваш вопрос</label>
-                            <textarea class="personal__question personal__question--area" name="user-question" id="personal__question--area" rows="11" placeholder="Ваш вопрос" required=""></textarea>
+                            <textarea class="input personal__question personal__question--area" name="user-question" id="personal__question--area" rows="11" placeholder="Ваш вопрос" required=""></textarea>
                         </p>
                         <div class="form__personal-send">
                             <div class="send send__info">
@@ -301,21 +302,21 @@
                     <p class="item item__legal item__legal-tablet">1999-2018 SD Service Devices</p>
                     <ul class="page-footer__social page-footer__social--icons social list-reset">
                         <li class="button social__item">
-                            <a class="link social__link" href="#">
+                            <a class="link social__link" aria-label="Открыть нашу страницу в фейсбук" href="#">
                                 <svg width="27" height="26">
                                     <use xlink:href="#facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="button social__item">
-                            <a class="link social__link" href="#">
+                            <a class="link social__link" aria-label="Открыть нашу страницу в одноклассники" href="#">
                                 <svg width="27" height="26">
                                     <use xlink:href="#ok"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="button social__item">
-                            <a class="link social__link" href="#">
+                            <a class="link social__link" aria-label="Открыть нашу страницу во вконтакте" href="#">
                                 <svg width="27" height="26">
                                     <use xlink:href="#vk"></use>
                                 </svg>
@@ -327,8 +328,8 @@
                     <!-- Sections of the website block -->
                     <div class="page-footer__sections">
                         <h3 class="title page-footer__sections page-footer__sections--heading">Разделы сайта</h3>
-                        <button class="open-sections"></button>
-                        <ul class="sections sections__list list-reset hidden">
+                        <button class="open-sections" aria-label="Откройте список разделов"></button>
+                        <ul class="sections sections__list list-reset">
                             <li class="sections__list sections__list--item item  item__about-company">
                                 <a class="link sections__list sections__list--item-link" href="#">O компании</a>
                             </li>
@@ -354,9 +355,9 @@
                     </div>
                     <!-- Contacts block -->
                     <div class="page-footer__contacts">
-                        <button class="open-contacts"></button>
+                        <button class="open-contacts" aria-label="Откройте список контактов"></button>
                         <h3 class="title page-footer__contacts page-footer__contacts--heading">Наш офис</h3>
-                        <ul class="contacts contacts__list list-reset hidden">
+                        <ul class="contacts contacts__list list-reset">
                             <li class="contacts__list contacts__list--item">
                                 <a class="link contacts__list contacts__list--link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
                             </li>
@@ -389,7 +390,7 @@
     </footer>
     <div class="popup popup__container hidden">
         <form class="popup popup__form">
-            <button class="popup-close" aria-label="Закрыть форму">
+            <button class="button popup-close" aria-label="Закрыть форму">
                 <span class="visually-hidden">Закрыть форму</span>
             </button>
             <div class="popup__wrapper">
@@ -400,15 +401,15 @@
                 <div class="popup__details">
                     <p class="paragraph popup__details details details__name">
                         <label class="visually-hidden" for="details__name--input">Имя пользователя</label>
-                        <input class="details__name details__name--input" type="text" name="user-name" id="details__name--input" placeholder="Имя" required="">
+                        <input class="input details__name details__name--input" type="text" name="user-name" id="details__name--input" placeholder="Имя" required="">
                     </p>
                     <p class="paragraph details details__personal details__phone">
                         <label class="visually-hidden" for="details__phone--input">Телефон</label>
-                        <input class="details__phone details__phone--input" type="tel" name="user-phone" id="details__phone--input" placeholder="Телефон" required="">
+                        <input class="input details__phone details__phone--input" type="tel" name="user-phone" id="details__phone--input" placeholder="Телефон" required="">
                     </p>
                     <p class="paragraph details details__personal details__question">
                         <label class="visually-hidden" for="details__question--area">Ваш вопрос</label>
-                        <textarea class="details__question details__question--area" name="user-question" id="details__question--area" rows="7" placeholder="Ваш вопрос" required=""></textarea>
+                        <textarea class="input details__question details__question--area" name="user-question" id="details__question--area" rows="7" placeholder="Ваш вопрос" required=""></textarea>
                     </p>
                     <div class="popup__details-send">
                         <div class="send send__data">

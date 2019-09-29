@@ -17,11 +17,11 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-left: 11px;
+	margin-left: 7px;
 }
 
 .page-header__logo--image {
-	margin-right: 20px;
+	margin-right: 9px;
 	margin-top: -6px;
 }
 
@@ -36,7 +36,7 @@
 	width: 135px;
 }
 
-.logo--text__eng {
+.text__eng {
 	margin: 0;
 
 	font-family: "Roboto Condensed";
@@ -46,7 +46,7 @@
 	color: #fff;
 }
 
-.logo--text__rus {
+.text__rus {
 	margin: 0;
 
 	font-size: 12px;
@@ -76,7 +76,7 @@
 	position: relative;
 }
 
-.item--email__icon {
+.item__email-icon {
 	position: absolute;
 	top: 3px;
 	left: -38px;
@@ -96,7 +96,7 @@
 	position: relative;
 }
 
-.item--phone__icon {
+.item__phone-icon {
 	position: absolute;
 	top: 0px;
 	left: -34px;
@@ -111,7 +111,7 @@
 	color: #fff;
 }
 
-.item--form__button {
+.item__form-button {
 	padding: 14px 30px 11px 27px;
   margin-top: -12px;
 
@@ -129,13 +129,22 @@
 	letter-spacing: 0.05em;
 }
 
+.big-email,
+.big-phone {
+	display: none;
+}
+
 @media (max-width: 1023px) {
 	.page-header__container {
 		padding-top: 25px;
 	}
 
 	.page-header__logo {
-		margin-left: 22px;
+		margin-left: 12px;
+	}
+
+	.page-header__logo--image {
+		margin-right: 7px;
 	}
 
 	.nav-list {
@@ -155,17 +164,26 @@
 		display: none;
 	}
 
-	.item--form__button {
+	.big-email,
+	.big-phone {
+		display: block;
+	}
+
+	.item__form-button {
 		display: none;
 	}
 
-	.item__email--tablet {
+	.item__email-tablet {
 		display: block;
+		width: 25px;
+		height: 18px;
 	}
 
-	.item__phone--tablet {
+	.item__phone-tablet {
 		display: block;
-		margin-right: -28px;
+		width: 19px;
+		height: 19px;
+		margin-right: 10px;
     margin-top: -2px;
 	}
 }
@@ -176,11 +194,11 @@
 	}
 
 	.page-header__container {
-		padding-top: 23px;
+		padding-top: 17px;
 	}
 
 	.page-header__logo {
-		margin-left: 17px;
+		margin-left: 9px;
 	}
 
 	.nav-list {
@@ -190,7 +208,7 @@
 
 	.main-nav {
 		margin-right: 3px;
-		margin-top: -9px;
+		margin-top: -2px;
 	}
 
 	.nav-list__item--phone {
@@ -201,21 +219,25 @@
 		display: none;
 	}
 
-	.item--form__button {
+	.item__form-button {
 		display: none;
 	}
 
-	.item__email--tablet {
+	.item__email-tablet {
 		display: block;
+		width: 26px;
+		height: 19px;
 	}
 
-	.item__phone--tablet {
+	.item__phone-tablet {
 		display: block;
-		margin-right: -12px;
+		width: 19px;
+		height: 19px;
+		margin-right: 17px;
     margin-top: -2px;
 	}
 
-	.page-header__logo--text {
+	.page-header__logo-text {
 		display: none;
 	}
 

@@ -62,6 +62,9 @@
 }
 
 .form__description--text {
+	padding-bottom: 0px;
+	margin-left: 8px;
+
 	font-size: 16px;
 	line-height: 22px;
 
@@ -89,6 +92,7 @@
 .personal__phone--input,
 .personal__name--input {
 	width: 582px;
+	margin: 0px;
 	padding-left: 17px;
 	padding-top: 17px;
 	padding-bottom: 21px;
@@ -111,6 +115,7 @@
 
 .personal__question--area {
 	width: 582px;
+	margin: 0px;
 	padding-top: 7px;
 	padding-left: 24px;
 
@@ -271,6 +276,7 @@
 
 	.form__description--text {
 		margin-left: 5px;
+		padding-bottom: 0px;
 
 		font-size: 16px;
 		line-height: 22px;
@@ -285,8 +291,8 @@
 	}
 
 	.personal__name {
-		margin-right: 30px;
 		width: 280px;
+		margin-right: 30px;
 	}
 
 	.personal__phone {
@@ -296,6 +302,7 @@
 	.personal__phone--input,
 	.personal__name--input {
 		width: 280px;
+		margin: 0px;
 		padding-left: 19px;
 		padding-top: 19px;
 		padding-bottom: 21px;
@@ -322,6 +329,7 @@
 
 	.personal__question--area {
 		width: 590px;
+		margin: 0px;
 		padding-top: 14px;
 		padding-left: 22px;
 
@@ -473,6 +481,7 @@
 
 	.form__description--text {
 		margin-left: 0px;
+		padding-bottom: 0px;
 		width: 85%;
 
 		font-size: 16px;
@@ -506,7 +515,8 @@
 		width: 100%;
 		padding-left: 15px;
 		padding-top: 13px;
-		padding-bottom: 19px;
+		padding-bottom: 21px;
+		margin-bottom: 0px;
 
 	  font-size: inherit;
     font-family: inherit;
@@ -520,6 +530,7 @@
 		padding-left: 15px;
 		padding-top: 15px;
 		padding-bottom: 20px;
+		margin-bottom: 0px;
 
 	  font-size: inherit;
     font-family: inherit;
@@ -536,12 +547,13 @@
 	}
 
 	.personal__question {
-		margin-top: 29px;
+		margin-top: 28px;
 		margin-bottom: 30px;
 	}
 
 	.personal__question--area {
 		max-width: 590px;
+		margin: 0px;
 		height: 104px;
 		padding-top: 13px;
 		padding-left: 16px;

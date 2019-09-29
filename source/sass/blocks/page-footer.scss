@@ -34,7 +34,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 
-	margin-bottom: 45px;
+	margin-bottom: 50px;
 	margin-left: 10px;
 }
 
@@ -49,10 +49,13 @@
 }
 
 .page-footer__logo--text {
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 	margin-top: 4px;
 }
 
-.page-footer__logo--text .logo--text__eng {
+ .logo-text__eng {
 	font-family: "Roboto Condensed";
 	font-weight: bold;
 	font-size: 25px;
@@ -61,11 +64,18 @@
 	color: #203C42;
 }
 
+.logo-text__rus {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+}
+
 .page-footer__social--icons {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-left: 10px;
+	margin-left: 13px;
 }
 
 .social__item {
@@ -87,7 +97,7 @@
 	flex-direction: column;
 	width: 425px;
 	margin-right: 235px;
-	margin-left: 60px;
+	margin-left: 10px;
 }
 
 .sections__list {
@@ -99,6 +109,9 @@
 
 .page-footer__sections--heading {
 	margin-bottom: 24px;
+	width: auto;
+	display: block;
+  margin-left: 0px;
 
 	font-family: "Roboto Condensed";
 	font-size: 15px;
@@ -282,10 +295,17 @@
 	}
 
 	.page-footer__logo--text {
+		display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 		margin-top: 4px;
 	}
 
-	.page-footer__logo--text .logo--text__eng {
+	.logo-text__rus {
+		margin-top: 3px;
+	}
+
+	.page-footer__logo--text .logo-text__eng {
 		font-family: "Roboto Condensed";
 		font-weight: bold;
 		font-size: 25px;
@@ -296,7 +316,7 @@
 
 	.item__legal-tablet {
 		display: block;
-		margin-top: 16px;
+		margin-top: 18px;
 		margin-left: 12px;
 
 		font-style: normal;
@@ -304,6 +324,7 @@
 		font-size: 13px;
 		line-height: 24px;
 		text-transform: uppercase;
+		letter-spacing: 0.04em;
 
 		color: #1B2D37;
 
@@ -315,7 +336,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		margin-right: 23px;
-		margin-top: 10px;
+		margin-top: 13px;
 	}
 
 	.social__item {
@@ -330,7 +351,7 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		padding-top: 38px;
+		padding-top: 47px;
 		justify-content: space-between;
 	}
 
@@ -382,12 +403,12 @@
 
 	.page-footer__sections--heading {
 		margin-bottom: 24px;
+		display: block;
+		margin-left: 0px;
 
 		font-family: "Roboto Condensed";
 		font-size: 15px;
 		line-height: 16px;
-		display: flex;
-		align-items: center;
 		text-transform: uppercase;
 
 		color: #1B2D37;
@@ -533,7 +554,8 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		margin: 0 auto;
-		margin-bottom: 20px;
+		margin-bottom: 25px;
+		padding-right: 5px;
 	}
 
 	.page-footer__logo {
@@ -542,15 +564,22 @@
 		flex-direction: row;
 	}
 
+	.logo-text__rus {
+		margin-top: 0px;
+	}
+
 	.page-footer__logo--image {
 		margin-right: 15px;
 	}
 
 	.page-footer__logo--text {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
 		margin-top: 7px;
 	}
 
-	.page-footer__logo--text .logo--text__eng {
+	.page-footer__logo--text .logo-text__eng {
 		font-family: "Roboto Condensed";
 		font-weight: bold;
 		font-size: 25px;
@@ -578,7 +607,7 @@
 
 
 	.page-footer__social--icons {
-		width: 112px;
+		width: 119px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -652,14 +681,18 @@
 		justify-content: space-between;
 	}
 
+	.sections__list--item {
+		margin: 0px;
+	}
+
 	.page-footer__sections--heading {
 		margin-bottom: 24px;
+		display: block;
+		margin-left: 0px;
 
 		font-family: "Roboto Condensed";
 		font-size: 15px;
 		line-height: 16px;
-		display: flex;
-		align-items: center;
 		text-transform: uppercase;
 
 		color: #1B2D37;
@@ -709,6 +742,8 @@
 
 	.page-footer__contacts--heading {
 		margin-bottom: 32px;
+		margin-top: 0px;
+		margin-left: 0px;
 
 		font-size: 15px;
 		line-height: 16px;

@@ -1,5 +1,5 @@
 "use strict";
-var buttonHeader = document.querySelector(".item--form__button");
+var buttonHeader = document.querySelector(".item__form-button");
 var popupContainer = document.querySelector(".popup__container");
 var popup = document.querySelector(".popup");
 var close = document.querySelector(".popup-close");
@@ -12,8 +12,6 @@ var pageMain = document.querySelector(".page-main");
 var pageFooter = document.querySelector(".page-footer");
 var pageIntro = document.querySelector(".intro");
 var storage = "";
-// var buttonSections = document.querySelector(".open-sections");
-// var buttonContacts = document.querySelector(".open-contacts");
 var buttonFooter = [...document.querySelectorAll("[class^='open-']")];
 var sectionsList = document.querySelector(".sections__list");
 var contactsList = document.querySelector(".contacts__list");
@@ -43,9 +41,10 @@ buttonHeader.addEventListener("click", function (evt) {
   }
 });
 
-close.addEventListener("click", function(evt){
+close.addEventListener("click", function(evt) {
   evt.preventDefault();
   popupContainer.classList.add("hidden");
+  popupContainer.classList.remove("open");
   body.style.overflow = "auto";
 });
 
@@ -72,63 +71,27 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (popup.classList.contains("open")) {
      	popupContainer.classList.add("hidden");
-      popup.classList.remove("open");
+      popupContainer.classList.remove("open");
      	body.style.overflow = "auto";
     }
   }
 });
 
-// buttonSections.addEventListener("click", function () {
-//   if (sectionsList.classList.contains("hidden")) {
-//     sectionsList.classList.remove("hidden");
-//     buttonSections.style.backgroundImage = "url('../img/icons/button-close-sections.svg')";
-//     buttonSections.style.width = "16px";
-//     buttonSections.style.height = "1px";
-//   } else if (!sectionsList.classList.contains("hidden")) {
-//     sectionsList.classList.add("hidden");
-//     buttonSections.style.backgroundImage = "url('../img/icons/button-open-sections.svg')";
-//     buttonSections.style.width = "16px";
-//     buttonSections.style.height = "16px";
-//   }
-//   if(!contactsList.classList.contains("hidden")) {
-//     buttonContacts.style.backgroundImage = "url('../img/icons/button-close-contacts.svg')";
-//     contactsList.classList.add("hidden");
-//   }
-// });
-
-// buttonContacts.addEventListener("click", function () {
-//   if (contactsList.classList.contains("hidden")) {
-//     contactsList.classList.remove("hidden");
-//     buttonContacts.style.backgroundImage = "url('../img/icons/button-close-contacts.svg')";
-//     buttonContacts.style.width = "16px";
-//     buttonContacts.style.height = "1px";
-//   } else if (!contactsList.classList.contains("hidden")) {
-//     contactsList.classList.add("hidden");
-//     buttonContacts.style.backgroundImage = "url('../img/icons/button-open-contacts.svg')";
-//     buttonContacts.style.width = "16px";
-//     buttonContacts.style.height = "16px";
-//   }
-//   if(!sectionsList.classList.contains("hidden")) {
-//     buttonSections.style.backgroundImage = "url('../img/icons/button-close-sections.svg')";
-//     sectionsList.classList.add("hidden");
-//   }
-// });
-
-buttonFooter.forEach(function(element){
-element.addEventListener("click", function() {
+buttonFooter.forEach(function (element) {
+element.addEventListener("click", function () {
 var parent = this.parentElement.className;
  document.querySelector(".page-footer__extra > [class^='page-footer__']:not(."+parent+") >ul").classList.add("hidden");
-  this.parentNode.querySelector("ul").classList.remove("hidden")
-
+  this.parentNode.querySelector("ul").classList.remove("hidden");
+  
 },false);
 })
 
-  scrollButton.addEventListener("click", function (e) {
-    e.preventDefault();
-    var blockID = scrollButton.getAttribute("href");
-    document.querySelector(blockID).scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    })
+scrollButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  var blockID = scrollButton.getAttribute("href");
+  document.querySelector(blockID).scrollIntoView({
+    behavior: "smooth",
+    block: "start"
   })
+})
 

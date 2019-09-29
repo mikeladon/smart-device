@@ -70,6 +70,10 @@
 	bottom: 0px;
 	right: 0px;
 	padding: 20px 26px;
+	height: auto;
+  width: auto;
+  margin-bottom: 0;
+
 
 
 	color: #fff;
@@ -137,11 +141,14 @@
 	}
 
 	.services__card--link {
+		width: auto;
+    height: auto;
+    margin-bottom: 0px;
 		position: absolute;
 
 		bottom: 0px;
 		right: 0px;
-		padding: 20px 26px;
+		padding: 20px 27px;
 
 
 		color: #fff;
@@ -199,7 +206,7 @@
 	.services__card--heading {
 		position: absolute;
 		width: 175px;
-		left: 36px;
+		left: 23px;
 		top: 20px;
 
 		font-family: "Roboto Condensed";
@@ -217,6 +224,9 @@
 
 	.services__card--link {
 		position: absolute;
+		height: auto;
+	  width: auto;
+	  margin-bottom: 0;
 
 		bottom: 0px;
 		right: 0px;

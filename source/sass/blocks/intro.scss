@@ -1,5 +1,5 @@
 .intro {
-	margin-top: -1px;
+	margin-top: 5px;
 	padding-top: 225px;
 	padding-bottom: 290px;
 	position: relative;
@@ -92,7 +92,7 @@
 	background: #fff;
 }
 
-.intro-info__link {
+.button__link {
 	padding: 17px 48px 17px;
 	margin-left: 106px;
 
@@ -144,7 +144,7 @@
 
 @media (max-width: 1023px) {
 	.intro {
-		padding-top: 112px;
+		padding-top: 119px;
 		margin-top: 0px;
 		margin-bottom: 0px;
 		padding-bottom: 180px;
@@ -200,6 +200,7 @@
 
 	.intro-info__heading {
 		margin-left: 4px;
+		margin-bottom: 26px;
 		width: 470px;
 
 		font-family: "Roboto Condensed";
@@ -236,7 +237,7 @@
 		background: #fff;
 	}
 
-	.intro-info__link {
+	.button__link {
 		padding: 17px 33px;
 		margin-left: 139px;
 
@@ -264,7 +265,7 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
 		.intro {
-		padding-top: 230px;
+		padding-top: 227px;
 		margin-top: 0px;
 		margin-bottom: 0px;
 		padding-bottom: 71px;
@@ -276,7 +277,7 @@
 		content: "";
 
 		position: absolute;
-		top: 37px;
+		top: 31px;
 		right: -172px;
 		width: 465px;
 		height: 340px;
@@ -315,11 +316,12 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		margin-bottom: 41px;
-		margin-left: 13px;
+		margin-left: 8px;
 	}
 
 	.intro-info__heading {
 		width: 235px;
+		margin-bottom: 25px;
 
 		font-family: "Roboto Condensed";
 		font-style: normal;
@@ -333,7 +335,7 @@
 
 	.intro-info__text {
 		position: relative;
-		margin-left: 54px;
+		margin-left: 58px;
 		width: 235px;
 
 		font-size: 16px;
@@ -358,12 +360,12 @@
 		height: 2px;
 		width: 35px;
 		top: 16px;
-		left: -50px;
+		left: -49px;
 
 		background: #fff;
 	}
 
-	.intro-info__link {
+	.button__link {
 		padding: 17px 16px;
 		margin-left: 18px;
 		width: 287px;

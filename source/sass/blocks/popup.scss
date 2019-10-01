@@ -106,7 +106,7 @@
 
 .details__name {
 	width: 410px;
-	margin-bottom: 27px;
+	margin-bottom: 32px;
 }
 
 .details__phone {
@@ -118,8 +118,16 @@
 	margin: 0px;
 	width: 410px;
 	padding-left: 21px;
-	padding-top: 18px;
-	padding-bottom: 21px;
+	padding-top: 11px;
+	padding-bottom: 16px;
+
+	font-family: 'PT Mono';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+
+	color: #FFFFFF;
 
 	border: 1px solid transparent;
   background: rgba(255, 255, 255,0.1);
@@ -142,6 +150,15 @@
 	margin: 0px;
 	padding-top: 7px;
 	padding-left: 24px;
+	padding-bottom: 5px;
+
+	font-family: 'PT Mono';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+
+	color: #FFFFFF;
 
 	background: rgba(255, 255, 255,0.1);
 	border: 1px solid transparent;
@@ -182,6 +199,10 @@
 .confirm-text {
 	font-size: 14px;
 	line-height: 16px;
+
+	font-family: 'PT Mono';
+	font-style: normal;
+	font-weight: normal;
 
 	color: rgba(255, 255, 255, 0.8);
 }

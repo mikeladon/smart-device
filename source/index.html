@@ -23,7 +23,7 @@
                     </a>
                     <div class="page-header__logo page-header__logo--text">
                         <p class="paragraph text text__eng">Smart Device</p>
-                        <p class="paragraph text text__rus">Умные технологии</p>
+                        <p class="paragraph text text__rus">умные технологии</p>
                     </div>
                 </div>
                 <nav class="introduction__page-header page-header__nav">
@@ -262,7 +262,7 @@
                         </p>
                         <p class="paragraph form__personal personal personal__question">
                             <label class="visually-hidden" for="personal__question--area">Ваш вопрос</label>
-                            <textarea class="input personal__question personal__question--area" name="user-question" id="personal__question--area" rows="11" placeholder="Ваш вопрос" required=""></textarea>
+                            <textarea class="input personal__question personal__question--area" name="user-question" id="personal__question--area" rows="6" placeholder="Ваш вопрос" required=""></textarea>
                         </p>
                         <div class="form__personal-send">
                             <div class="send send__info">
@@ -327,8 +327,10 @@
                 <div class="page-footer__extra">
                     <!-- Sections of the website block -->
                     <div class="page-footer__sections">
-                        <h3 class="title page-footer__sections page-footer__sections--heading">Разделы сайта</h3>
-                        <button class="open-sections" aria-label="Откройте список разделов"></button>
+                        <div class="clickable clickable__mobile">
+                            <h3 class="title page-footer__sections page-footer__sections--heading">Разделы сайта</h3> 
+                            <button class="toggle open-sections" aria-label="Откройте список разделов"></button>
+                        </div>
                         <ul class="sections sections__list list-reset">
                             <li class="sections__list sections__list--item item  item__about-company">
                                 <a class="link sections__list sections__list--item-link" href="#">O компании</a>
@@ -355,8 +357,10 @@
                     </div>
                     <!-- Contacts block -->
                     <div class="page-footer__contacts">
-                        <button class="open-contacts" aria-label="Откройте список контактов"></button>
+                      <div class="clickable clickable__mobile">
                         <h3 class="title page-footer__contacts page-footer__contacts--heading">Наш офис</h3>
+                        <button class="toggle open-contacts" aria-label="Откройте список контактов"></button>
+                      </div>
                         <ul class="contacts contacts__list list-reset">
                             <li class="contacts__list contacts__list--item">
                                 <a class="link contacts__list contacts__list--link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
@@ -409,7 +413,7 @@
                     </p>
                     <p class="paragraph details details__personal details__question">
                         <label class="visually-hidden" for="details__question--area">Ваш вопрос</label>
-                        <textarea class="input details__question details__question--area" name="user-question" id="details__question--area" rows="7" placeholder="Ваш вопрос" required=""></textarea>
+                        <textarea class="input details__question details__question--area" name="user-question" id="details__question--area" rows="4" placeholder="Ваш вопрос" required=""></textarea>
                     </p>
                     <div class="popup__details-send">
                         <div class="send send__data">
@@ -427,6 +431,7 @@
             </div>
         </form>
     </div>
+    <script src="https://unpkg.com/imask"></script>
     <script src="js/script.js"></script>
 	</body>
 </html>

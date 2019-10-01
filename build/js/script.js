@@ -12,14 +12,20 @@ var pageMain = document.querySelector(".page-main");
 var pageFooter = document.querySelector(".page-footer");
 var pageIntro = document.querySelector(".intro");
 var storage = "";
-var buttonFooter = [...document.querySelectorAll("[class^='open-']")];
+var buttonFooter = document.querySelectorAll(".clickable__mobile");
 var sectionsList = document.querySelector(".sections__list");
 var contactsList = document.querySelector(".contacts__list");
 var TABLET_WIDTH = 767;
 var scrollButton = document.querySelector(".intro__scroll");
-var phoneInput = document.querySelector('.personal__phone--input');
-var popupPhoneInput = document.querySelector('.details__phone--input');
-var regExp = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+var phoneInput = document.querySelector(".personal__phone--input");
+var popupPhoneInput = document.querySelector(".details__phone--input");
+var pageFooterContacts = document.querySelector(".page-footer__contacts");
+var pageFooterSections = document.querySelector(".page-footer__sections");
+var active = document.getElementsByClassName('toggle-open');
+var phoneMaskPage = document.getElementById('personal__phone--input');
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
 
 var onOverlayClick = function(evt){
   if (!popup.contains(evt.target)) { 
@@ -51,32 +57,6 @@ close.addEventListener("click", function(evt) {
   body.style.overflow = "auto";
 });
 
-var validatePhone = function () {
-  var valid = regExp.test(phoneInput.value);
-  if (!valid) {
-    document.querySelector('.send__info--button').setAttribute("disabled", "true");
-    phoneInput.style.border = "1px solid red";
-  } else {
-    document.querySelector('.send__info--button').removeAttribute("disabled");
-    phoneInput.style.border = "1px solid transparent";
-  }
-}
-
-phoneInput.addEventListener('change', validatePhone);
-
-var validatePhonePopup = function () {
-  var valid = regExp.test(popupPhoneInput.value);
-  if (!valid) {
-    document.querySelector('.send__data--button').setAttribute("disabled", "true");
-    popupPhoneInput.style.border = "1px solid red";
-  } else {
-    document.querySelector('.send__data--button').removeAttribute("disabled");
-    popupPhoneInput.style.border = "1px solid transparent";
-  }
-}
-
-popupPhoneInput.addEventListener('change', validatePhonePopup);
-
 popup.addEventListener("submit", function(evt) {
   localStorage.setItem("name", name.value);
   localStorage.setItem("email", email.value);
@@ -107,13 +87,38 @@ window.addEventListener("keydown", function (evt) {
 });
 
 buttonFooter.forEach(function (element) {
-element.addEventListener("click", function () {
-var parent = this.parentElement.className;
- document.querySelector(".page-footer__extra > [class^='page-footer__']:not(."+parent+") >ul").classList.add("hidden");
+element.addEventListener("click", function (evt) {
+  if (active.length > 0 && active[0] !== this) {
+    active[0].parentNode.querySelector("ul").classList.add("hidden");
+    active[0].querySelector(".toggle").style.backgroundImage = "url('../img/icons/open-list.svg')";
+    active[0].classList.remove('toggle-open');
+  }
+
   this.parentNode.querySelector("ul").classList.remove("hidden");
-  
+  this.classList.toggle("toggle-open");
+  this.querySelector(".toggle").style.backgroundImage = "url('../img/icons/close-list.svg')";
+  if (this.classList.contains('toggle-open') &&
+    this.children[0].classList.contains('page-footer__contacts')) {
+      this.querySelector(".toggle").style.top = '5px';
+    } else if (this.classList.contains('toggle-open') &&
+    this.children[0].classList.contains('page-footer__sections')) {
+      this.querySelector(".toggle").style.top = '30px';
+    } else if (!this.classList.contains('toggle-open') &&
+    this.children[0].classList.contains('page-footer__sections')) {
+      this.querySelector(".toggle").style.top = '25px';
+      this.querySelector(".toggle").style.backgroundImage = "url('../img/icons/open-list.svg')";
+      this.parentNode.querySelector("ul").classList.add("hidden");
+    } else if (!this.classList.contains('toggle-open') &&
+    this.children[0].classList.contains('page-footer__contacts')) {
+      this.querySelector(".toggle").style.top = '0px';
+      this.querySelector(".toggle").style.backgroundImage = "url('../img/icons/open-list.svg')";
+      this.parentNode.querySelector("ul").classList.add("hidden");
+    }
 },false);
 })
+
+var mask = IMask(phoneMaskPage, maskOptions);
+var mask = IMask(popupPhoneInput, maskOptions);
 
 scrollButton.addEventListener("click", function (e) {
   e.preventDefault();

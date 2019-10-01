@@ -131,7 +131,7 @@
 
 .block__text {
 	padding-right: 85px;
-  padding-left: 38px;
+  padding-left: 42px;
   padding-bottom: 46px;
 
 	font-size: 16px;
@@ -242,7 +242,7 @@
 	}
 
 	.about-us__wrapper {
-		margin-top: 55px;
+		margin-top: 54px;
 	}
 
 	.about-us__advantages {
@@ -339,7 +339,7 @@
 
 	.block__text {
 		padding-right: 20px;
-	  padding-left: 26px;
+	  padding-left: 25px;
 	  padding-bottom: 31px;
 
 		font-size: 16px;
@@ -353,6 +353,10 @@
 	.block--confidenciality,
 	.block--cost {
 		min-height: 232px;
+	}
+
+	.block--confidenciality .block__text {
+		padding-top: 3px;
 	}
 
 	.block--timing .block__text {
@@ -441,7 +445,7 @@
 	}
 
 	.about-us__wrapper {
-		margin-top: 37px;
+		margin-top: 39px;
 	}
 
 	.about-us__advantages {
@@ -454,7 +458,7 @@
 		display: flex;
 		flex-direction: column;
 		max-width: none;
-		width: 289px;
+		width: 100%;
 		min-height: 310px;
 		margin-bottom: 20px;
 
@@ -542,7 +546,7 @@
 	.block__text {
 		padding-bottom: 10px;
 		padding-right: 10px;
-	  padding-left: 26px;
+	  padding-left: 25px;
 
 		font-size: 16px;
 		line-height: 22px;
@@ -566,7 +570,7 @@
 	}
 
 	.block--cost .block__heading {
-		padding-top: 65px;
+		padding-top: 68px;
 	}
 
 	.block--timing .block__text {

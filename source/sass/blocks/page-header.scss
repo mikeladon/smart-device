@@ -144,7 +144,11 @@
 	}
 
 	.page-header__logo--image {
-		margin-right: 7px;
+		margin-right: 5px;
+	}
+
+	.text__rus {
+		margin-top: 2px;
 	}
 
 	.nav-list {
@@ -199,6 +203,11 @@
 
 	.page-header__logo {
 		margin-left: 9px;
+		margin-top: 0px;
+	}
+
+	.page-header__logo--text {
+		display: none;
 	}
 
 	.nav-list {

@@ -31,6 +31,7 @@
 
 	border-top: 1px solid #EBEBEB;
 	border-bottom: 1px solid #EBEBEB;
+	border-right: 1px solid #EBEBEB;
 	border-left: 1px solid #00B2FF;
 }
 
@@ -567,6 +568,10 @@
 	.block--confidenciality .block__heading {
 		padding-top: 65px;
 		margin-bottom: -7px;
+	}
+
+	.block--confidenciality .block__text {
+		padding-top: 0px;
 	}
 
 	.block--cost .block__heading {

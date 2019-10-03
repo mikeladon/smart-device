@@ -73,6 +73,7 @@ var onResizeWindow = function () {
 	}
 }
 
+window.addEventListener("load", onResizeWindow);
 window.addEventListener("resize", onResizeWindow);
 
 window.addEventListener("keydown", function (evt) {

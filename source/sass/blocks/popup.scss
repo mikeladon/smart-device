@@ -8,7 +8,7 @@
 	z-index: 5;
 }
 
-.popup {
+.popup__form {
 	position: absolute;
 	width: 490px;
 	height: auto;
@@ -20,10 +20,6 @@
 	flex-wrap: wrap;
 
 	background: #00B2FF;
-}
-
-.popup__form {
-	top: 0px;
 }
 
 .popup__wrapper {
@@ -205,16 +201,24 @@
 	font-weight: normal;
 
 	color: rgba(255, 255, 255, 0.8);
+
+	cursor: pointer;
 }
 
 .confirm__checkbox {
 	margin-left: 45px;
   padding-bottom: 28px;
   width: 330px;
+  cursor: pointer;
+}
+
+.confirm__checkbox:hover {
+	opacity: 0.8;
 }
 
 .confirm-checkbox {
 	position: relative;
+	cursor: pointer;
 }
 
 .confirm-checkbox input[type="checkbox"] + .confirm-indicator {

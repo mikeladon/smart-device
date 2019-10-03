@@ -22,11 +22,11 @@
 
 .form {
 	position: relative;
-	width: 582px;
+	width: 589px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	margin-right: 130px;
+	margin-right: 117px;
 }
 
 .form::before {
@@ -63,7 +63,6 @@
 
 .form__description--text {
 	padding-bottom: 0px;
-	margin-left: 8px;
 
 	font-size: 16px;
 	line-height: 22px;
@@ -82,18 +81,17 @@
 
 .personal__name {
 	margin-right: 29px;
-	width: 276px;
+	width: 270px;
 }
 
 .personal__phone {
-	width: 277px;
+	width: 271px;
 }
 
 .personal__phone--input,
 .personal__name--input {
-	width: 582px;
 	margin: 0px;
-	padding-left: 20px;
+	padding-left: 17px;
 	padding-top: 9px;
 	padding-bottom: 17px;
 
@@ -117,14 +115,14 @@
 
 .personal__question {
 	margin-top: 40px;
-	margin-bottom: 43px;
+	margin-bottom: 40px;
 }
 
 .personal__question--area {
-	width: 582px;
+	width: 570px;
 	margin: 0px;
-	padding-top: 7px;
-	padding-left: 24px;
+	padding-top: 10px;
+	padding-left: 17px;
 	padding-bottom: 11px;
 
 	font-family: "PT Mono";
@@ -154,7 +152,7 @@
 }
 
 .send__info--button {
-	margin-left: 4px;
+	margin-left: 0px;
 	padding: 15px 83px 13px 80px;
 
 	font-size: 14px;
@@ -173,6 +171,7 @@
 .send__checkbox {
 	width: 235px;
 	margin-top: 9px;
+	margin-right: 6px;
 }
 
 .checkbox-text {
@@ -522,12 +521,12 @@
 		margin-right: 0px;
 		margin-bottom: 31px;
 		width: 100%;
-		max-width: 290px;
+		max-width: 400px;
 	}
 
 	.personal__phone {
 		width: 100%;
-		max-width: 290px;
+		max-width: 400px;
 	}
 
 	.personal__phone--input {
@@ -572,7 +571,7 @@
 	}
 
 	.personal__question--area {
-		max-width: 590px;
+		max-width: 400px;
 		margin: 0px;
 		height: 104px;
 		padding-top: 13px;

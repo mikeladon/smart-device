@@ -23,6 +23,7 @@ var pageFooterContacts = document.querySelector(".page-footer__contacts");
 var pageFooterSections = document.querySelector(".page-footer__sections");
 var active = document.getElementsByClassName('toggle-open');
 var phoneMaskPage = document.getElementById('personal__phone--input');
+var contactLinks = document.querySelectorAll('.contacts__list li');
 var maskOptions = {
   mask: '+{7}(000)000-00-00'
 };
@@ -91,28 +92,48 @@ buttonFooter.forEach(function (element) {
 element.addEventListener("click", function (evt) {
   if (active.length > 0 && active[0] !== this) {
     active[0].parentNode.querySelector("ul").classList.add("hidden");
-    active[0].querySelector(".toggle").style.backgroundImage = "url('../img/icons/open-list.svg')";
+    active[0].querySelector(".toggle").classList.add('open-contacts');
+    active[0].querySelector(".toggle").classList.remove('close-contacts');
+    active[0].parentNode.querySelector("ul").querySelectorAll("li").forEach(function(link) {
+      link.style.opacity = 0;
+    })
     active[0].classList.remove('toggle-open');
   }
-
   this.parentNode.querySelector("ul").classList.remove("hidden");
   this.classList.toggle("toggle-open");
-  this.querySelector(".toggle").style.backgroundImage = "url('../img/icons/close-list.svg')";
+  this.querySelector(".toggle").classList.add('close-contacts');
+  this.querySelector(".toggle").classList.remove('open-contacts');
   if (this.classList.contains('toggle-open') &&
     this.children[0].classList.contains('page-footer__contacts')) {
       this.querySelector(".toggle").style.top = '5px';
+      this.parentNode.querySelector("ul").querySelectorAll("li").forEach(function(link) {
+    link.style.display = "inline";
+    setTimeout(() => link.style.opacity = 1, 0)
+  });
     } else if (this.classList.contains('toggle-open') &&
     this.children[0].classList.contains('page-footer__sections')) {
       this.querySelector(".toggle").style.top = '30px';
+        this.parentNode.querySelector("ul").querySelectorAll("li").forEach(function(link) {
+    link.style.display = "inline";
+    setTimeout(() => link.style.opacity = 1, 0)
+  });
     } else if (!this.classList.contains('toggle-open') &&
     this.children[0].classList.contains('page-footer__sections')) {
       this.querySelector(".toggle").style.top = '25px';
-      this.querySelector(".toggle").style.backgroundImage = "url('../img/icons/open-list.svg')";
+      this.querySelector(".toggle").classList.remove('close-contacts');
+      this.querySelector(".toggle").classList.add('open-contacts');
+      this.parentNode.querySelector("ul").querySelectorAll("li").forEach(function(link) {
+        link.style.opacity = 0;
+      })
       this.parentNode.querySelector("ul").classList.add("hidden");
     } else if (!this.classList.contains('toggle-open') &&
-    this.children[0].classList.contains('page-footer__contacts')) {
+      this.children[0].classList.contains('page-footer__contacts')) {
       this.querySelector(".toggle").style.top = '0px';
-      this.querySelector(".toggle").style.backgroundImage = "url('../img/icons/open-list.svg')";
+      this.querySelector(".toggle").classList.remove('close-contacts');
+      this.querySelector(".toggle").classList.add('open-contacts');
+      this.parentNode.querySelector("ul").querySelectorAll("li").forEach(function(link) {
+        link.style.opacity = 0;
+      })
       this.parentNode.querySelector("ul").classList.add("hidden");
     }
 },false);

@@ -167,6 +167,10 @@
 		z-index: 1;
 	}
 
+	.intro-info::after {
+		display: none;
+	}
+
 	.big-triangle-dots-intro {
 		display: none;
 	}
